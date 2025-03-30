@@ -19,115 +19,69 @@ title: About
                         <li>
                             <i class="fas fa-cloud"></i>
                             <span>Architecting cloud-native solutions deployed on Kubernetes</span>
-                            <div class="tech-badges">
-                                <span class="badge"><i class="fab fa-kubernetes"></i> Kubernetes</span>
-                                <span class="badge"><i class="fab fa-docker"></i> Docker</span>
-                                <span class="badge"><i class="fas fa-cloud"></i> Cloud Native</span>
-                            </div>
                         </li>
                         <li>
                             <i class="fas fa-network-wired"></i>
                             <span>Designing integration systems that connect complex banking operations</span>
-                            <div class="tech-badges">
-                                <span class="badge"><i class="fas fa-network-wired"></i> Integration</span>
-                                <span class="badge"><i class="fas fa-server"></i> Microservices</span>
-                            </div>
                         </li>
                         <li>
                             <i class="fas fa-chart-line"></i>
                             <span>Building data-driven solutions that turn information into insights</span>
-                            <div class="tech-badges">
-                                <span class="badge"><i class="fas fa-chart-bar"></i> Data Analytics</span>
-                                <span class="badge"><i class="fas fa-chart-line"></i> Business Intelligence</span>
-                            </div>
                         </li>
                         <li>
                             <i class="fas fa-shield-alt"></i>
                             <span>Implementing secure systems that comply with global banking regulations</span>
-                            <div class="tech-badges">
-                                <span class="badge"><i class="fas fa-shield-check"></i> Security</span>
-                                <span class="badge"><i class="fas fa-check-circle"></i> Compliance</span>
-                            </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="about-section">
-                    <h2 class="section-subtitle">Education & Certifications</h2>
-                    <div class="cert-grid">
-                        <div class="cert-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div class="cert-content">
-                                <h3>Education</h3>
-                                <p>Bachelor of Engineering</p>
-                                <p>Computer Science</p>
-                                <p class="cert-meta">Anna University, Chennai</p>
-                            </div>
+                    <h2 class="section-subtitle"><i class="fas fa-graduation-cap"></i> Education & Certifications</h2>
+                    <div class="education-certifications">
+                        <div class="education-item">
+                            <h3>Education</h3>
+                            <p>Bachelor of Engineering</p>
+                            <p>Computer Science</p>
+                            <p class="cert-meta">Anna University, Chennai</p>
                         </div>
-                        <div class="cert-item">
-                            <i class="fas fa-certificate"></i>
-                            <div class="cert-content">
-                                <h3>Technical Certifications</h3>
-                                <div class="cert-badges">
-                                    <span class="badge"><i class="fab fa-java"></i> Oracle Certified Professional, Java SE6 Programmer</span>
-                                    <span class="badge"><i class="fab fa-redhat"></i> RedHat System Administrator</span>
-                                    <span class="badge"><i class="fab fa-google"></i> Google Data Analytics Professional</span>
-                                </div>
-                            </div>
+                        <div class="certification-item">
+                            <h3>Technical Certifications</h3>
+                            <ul class="cert-list">
+                                <li>Oracle Certified Professional, Java SE6 Programmer</li>
+                                <li>RedHat System Administrator</li>
+                                <li>Google Data Analytics Professional</li>
+                            </ul>
                         </div>
-                        <div class="cert-item">
-                            <i class="fas fa-robot"></i>
-                            <div class="cert-content">
-                                <h3>AI & Development</h3>
-                                <div class="cert-badges">
-                                    <span class="badge"><i class="fas fa-robot"></i> ChatGPT Prompt Engineering</span>
-                                    <span class="badge"><i class="fas fa-robot"></i> LLM Pair Programming</span>
-                                </div>
-                            </div>
+                        <div class="certification-item">
+                            <h3>AI & Development</h3>
+                            <ul class="cert-list">
+                                <li>ChatGPT Prompt Engineering</li>
+                                <li>LLM Pair Programming</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="about-section">
-                    <h2 class="section-subtitle">Languages</h2>
-                    <div class="language-grid">
-                        <div class="language-item">
-                            <div class="language-header">
-                                <i class="fas fa-globe"></i>
-                                <h3>English</h3>
-                            </div>
-                            <div class="proficiency-badge">
-                                <span class="badge"><i class="fas fa-check-circle"></i> Full Professional Proficiency</span>
-                            </div>
-                        </div>
-                        <div class="language-item">
-                            <div class="language-header">
-                                <i class="fas fa-globe"></i>
-                                <h3>Hindi</h3>
-                            </div>
-                            <div class="proficiency-badge">
-                                <span class="badge"><i class="fas fa-check-circle"></i> Full Professional Proficiency</span>
-                            </div>
-                        </div>
-                        <div class="language-item">
-                            <div class="language-header">
-                                <i class="fas fa-globe"></i>
-                                <h3>Malayalam</h3>
-                            </div>
-                            <div class="proficiency-badge">
-                                <span class="badge"><i class="fas fa-star"></i> Native Speaker</span>
-                            </div>
-                        </div>
-                        <div class="language-item">
-                            <div class="language-header">
-                                <i class="fas fa-globe"></i>
-                                <h3>Tamil</h3>
-                            </div>
-                            <div class="proficiency-badge">
-                                <span class="badge"><i class="fas fa-book"></i> Working Knowledge</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="section-subtitle"><i class="fas fa-language"></i> Languages</h2>
+                    <ul class="language-list">
+                        <li class="language-item-vertical">
+                            <span class="language-name">English</span>
+                            <img src="https://img.shields.io/badge/-Full%20Professional%20Proficiency-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Full Professional Proficiency">
+                        </li>
+                        <li class="language-item-vertical">
+                            <span class="language-name">Hindi</span>
+                            <img src="https://img.shields.io/badge/-Full%20Professional%20Proficiency-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Full Professional Proficiency">
+                        </li>
+                        <li class="language-item-vertical">
+                            <span class="language-name">Malayalam</span>
+                            <img src="https://img.shields.io/badge/-Native%20Speaker-2D3748?style=flat-square&logo=star&logoColor=white" alt="Native Speaker">
+                        </li>
+                        <li class="language-item-vertical">
+                            <span class="language-name">Tamil</span>
+                            <img src="https://img.shields.io/badge/-Working%20Knowledge-2D3748?style=flat-square&logo=book&logoColor=white" alt="Working Knowledge">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -142,35 +96,21 @@ title: About
                 <i class="fas fa-book"></i>
                 <h3>Reading</h3>
                 <p>Avid reader with a particular love for science fiction and fantasy</p>
-                <div class="interest-badges">
-                    <span class="badge"><i class="fas fa-book-open"></i> Science Fiction</span>
-                    <span class="badge"><i class="fas fa-book-reader"></i> Fantasy</span>
-                </div>
             </div>
             <div class="interest-item">
                 <i class="fas fa-headphones"></i>
                 <h3>Audiobooks</h3>
                 <p>Frequently immersed in audiobooks and digital reading</p>
-                <div class="interest-badges">
-                    <span class="badge"><i class="fab fa-spotify"></i> Audiobooks</span>
-                </div>
             </div>
             <div class="interest-item">
                 <i class="fas fa-plane"></i>
                 <h3>Flight Simulation</h3>
                 <p>Virtual piloting of Airbus A320 neo in Microsoft Flight Simulator</p>
-                <div class="interest-badges">
-                    <span class="badge"><i class="fab fa-microsoft"></i> Microsoft Flight Simulator</span>
-                    <span class="badge"><i class="fas fa-plane"></i> Airbus A320 neo</span>
-                </div>
             </div>
             <div class="interest-item">
                 <i class="fas fa-brain"></i>
                 <h3>Continuous Learning</h3>
                 <p>Always exploring new technologies and concepts</p>
-                <div class="interest-badges">
-                    <span class="badge"><i class="fas fa-graduation-cap"></i> Lifelong Learning</span>
-                </div>
             </div>
         </div>
     </div>
@@ -526,6 +466,78 @@ title: About
     color: white;
 }
 
+.education-certifications {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education-item, .certification-item {
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.education-item h3, .certification-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cert-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cert-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.cert-list li::before {
+    content: "•";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.language-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.language-item-vertical {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.language-item-vertical:hover {
+    transform: translateY(-2px);
+    background: var(--card-bg);
+}
+
+.language-name {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
 @media (max-width: 768px) {
     .about-section {
         padding: 1.5rem;
@@ -557,6 +569,12 @@ title: About
 
     .interest-item {
         padding: 1.5rem;
+    }
+
+    .language-item-vertical {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
 }
 </style> 
