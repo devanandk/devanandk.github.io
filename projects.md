@@ -34,7 +34,7 @@ title: Projects
 
             <div class="project-card">
                 <div class="project-content">
-                    <h2>In-house Report Generation Engine</h2>
+                    <h2>Report Generation Engine for SBI Foreign Offices</h2>
                     <p class="project-description">Advanced reporting system with multi-format output and security features, supporting PDF, Excel, Word, HTML, and CSV formats.</p>
                     <div class="project-details">
                         <h3>Key Features:</h3>
@@ -56,7 +56,7 @@ title: Projects
 
             <div class="project-card">
                 <div class="project-content">
-                    <h2>Core Banking Aggregation</h2>
+                    <h2>Report Distribution System (ReDiS)</h2>
                     <p class="project-description">Java-based agent deployed across 100+ servers for centralized report distribution and data aggregation.</p>
                     <div class="project-details">
                         <h3>Key Features:</h3>
@@ -80,7 +80,7 @@ title: Projects
             <div class="project-card">
                 <div class="project-content">
                     <h2>MiRevenue Strategic Billing for Barclays Bank UK</h2>
-                    <p class="project-description">Implemented Zafin's PPLM platform with specialized Jasper Reports design and Java development.</p>
+                    <p class="project-description">Implementation of Zafin's PPLM platform with specialized Jasper Reports design and Java development.</p>
                     <div class="project-details">
                         <h3>Key Features:</h3>
                         <ul>
