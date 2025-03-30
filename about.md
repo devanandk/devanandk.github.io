@@ -143,8 +143,8 @@ title: About
                 <h3>Reading</h3>
                 <p>Avid reader with a particular love for science fiction and fantasy</p>
                 <div class="interest-badges">
-                    <img src="https://img.shields.io/badge/-Science%20Fiction-2D3748?style=flat-square&logo=book&logoColor=white" alt="Science Fiction">
-                    <img src="https://img.shields.io/badge/-Fantasy-2D3748?style=flat-square&logo=book&logoColor=white" alt="Fantasy">
+                    <img src="https://img.shields.io/badge/-Science%20Fiction-2D3748?style=flat-square&logo=book-open&logoColor=white" alt="Science Fiction">
+                    <img src="https://img.shields.io/badge/-Fantasy-2D3748?style=flat-square&logo=book-reader&logoColor=white" alt="Fantasy">
                 </div>
             </div>
             <div class="interest-item">
@@ -152,7 +152,7 @@ title: About
                 <h3>Audiobooks</h3>
                 <p>Frequently immersed in audiobooks and digital reading</p>
                 <div class="interest-badges">
-                    <img src="https://img.shields.io/badge/-Audiobooks-2D3748?style=flat-square&logo=headphones&logoColor=white" alt="Audiobooks">
+                    <img src="https://img.shields.io/badge/-Audiobooks-2D3748?style=flat-square&logo=spotify&logoColor=white" alt="Audiobooks">
                 </div>
             </div>
             <div class="interest-item">
@@ -160,7 +160,8 @@ title: About
                 <h3>Flight Simulation</h3>
                 <p>Virtual piloting of Airbus A320 neo in Microsoft Flight Simulator</p>
                 <div class="interest-badges">
-                    <img src="https://img.shields.io/badge/-Flight%20Simulator-2D3748?style=flat-square&logo=plane&logoColor=white" alt="Flight Simulator">
+                    <img src="https://img.shields.io/badge/-Microsoft%20Flight%20Simulator-2D3748?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft Flight Simulator">
+                    <img src="https://img.shields.io/badge/-Airbus%20A320%20neo-2D3748?style=flat-square&logo=airplane&logoColor=white" alt="Airbus A320 neo">
                 </div>
             </div>
             <div class="interest-item">
@@ -168,7 +169,7 @@ title: About
                 <h3>Continuous Learning</h3>
                 <p>Always exploring new technologies and concepts</p>
                 <div class="interest-badges">
-                    <img src="https://img.shields.io/badge/-Lifelong%20Learning-2D3748?style=flat-square&logo=graduation-cap&logoColor=white" alt="Lifelong Learning">
+                    <img src="https://img.shields.io/badge/-Lifelong%20Learning-2D3748?style=flat-square&logo=udemy&logoColor=white" alt="Lifelong Learning">
                 </div>
             </div>
         </div>
