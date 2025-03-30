@@ -16,10 +16,39 @@ title: About
                     <h2 class="section-subtitle">Professional Focus</h2>
                     <p class="section-intro">Currently leading enterprise-scale technical initiatives at State Bank of India, I focus on:</p>
                     <ul class="feature-list">
-                        <li><i class="fas fa-cloud"></i> Architecting cloud-native solutions deployed on Kubernetes</li>
-                        <li><i class="fas fa-network-wired"></i> Designing integration systems that connect complex banking operations</li>
-                        <li><i class="fas fa-chart-line"></i> Building data-driven solutions that turn information into insights</li>
-                        <li><i class="fas fa-shield-alt"></i> Implementing secure systems that comply with global banking regulations</li>
+                        <li>
+                            <i class="fas fa-cloud"></i>
+                            <span>Architecting cloud-native solutions deployed on Kubernetes</span>
+                            <div class="tech-badges">
+                                <img src="https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
+                                <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+                                <img src="https://img.shields.io/badge/-Cloud%20Native-2D3748?style=flat-square&logo=cloud&logoColor=white" alt="Cloud Native">
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-network-wired"></i>
+                            <span>Designing integration systems that connect complex banking operations</span>
+                            <div class="tech-badges">
+                                <img src="https://img.shields.io/badge/-Integration-2D3748?style=flat-square&logo=network-wired&logoColor=white" alt="Integration">
+                                <img src="https://img.shields.io/badge/-Microservices-2D3748?style=flat-square&logo=server&logoColor=white" alt="Microservices">
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line"></i>
+                            <span>Building data-driven solutions that turn information into insights</span>
+                            <div class="tech-badges">
+                                <img src="https://img.shields.io/badge/-Data%20Analytics-2D3748?style=flat-square&logo=chart-bar&logoColor=white" alt="Data Analytics">
+                                <img src="https://img.shields.io/badge/-Business%20Intelligence-2D3748?style=flat-square&logo=chart-line&logoColor=white" alt="Business Intelligence">
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Implementing secure systems that comply with global banking regulations</span>
+                            <div class="tech-badges">
+                                <img src="https://img.shields.io/badge/-Security-2D3748?style=flat-square&logo=shield-check&logoColor=white" alt="Security">
+                                <img src="https://img.shields.io/badge/-Compliance-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Compliance">
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -38,21 +67,21 @@ title: About
                             <i class="fas fa-certificate"></i>
                             <div class="cert-content">
                                 <h3>Technical Certifications</h3>
-                                <ul>
-                                    <li>Oracle Certified Professional, Java SE 6 Programmer</li>
-                                    <li>RedHat System Administration I & II (RH124 & RH134)</li>
-                                    <li>Google Data Analytics Professional Certificate</li>
-                                </ul>
+                                <div class="cert-badges">
+                                    <img src="https://img.shields.io/badge/-Oracle%20Certified%20Professional-007396?style=flat-square&logo=oracle&logoColor=white" alt="Oracle Certified Professional">
+                                    <img src="https://img.shields.io/badge/-RedHat%20System%20Admin-EE0000?style=flat-square&logo=redhat&logoColor=white" alt="RedHat System Admin">
+                                    <img src="https://img.shields.io/badge/-Google%20Data%20Analytics-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google Data Analytics">
+                                </div>
                             </div>
                         </div>
                         <div class="cert-item">
                             <i class="fas fa-robot"></i>
                             <div class="cert-content">
                                 <h3>AI & Development</h3>
-                                <ul>
-                                    <li>ChatGPT Prompt Engineering for Developers</li>
-                                    <li>Pair Programming with a Large Language Model</li>
-                                </ul>
+                                <div class="cert-badges">
+                                    <img src="https://img.shields.io/badge/-ChatGPT%20Prompt%20Engineering-2D3748?style=flat-square&logo=openai&logoColor=white" alt="ChatGPT Prompt Engineering">
+                                    <img src="https://img.shields.io/badge/-LLM%20Pair%20Programming-2D3748?style=flat-square&logo=robot&logoColor=white" alt="LLM Pair Programming">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -62,20 +91,28 @@ title: About
                     <h2 class="section-subtitle">Languages</h2>
                     <div class="language-grid">
                         <div class="language-item">
-                            <span class="language-name">English</span>
-                            <span class="language-level">Full Professional</span>
+                            <div class="language-badges">
+                                <img src="https://img.shields.io/badge/-English-2D3748?style=flat-square&logo=language&logoColor=white" alt="English">
+                                <img src="https://img.shields.io/badge/-Full%20Professional-2D3748?style=flat-square" alt="Full Professional">
+                            </div>
                         </div>
                         <div class="language-item">
-                            <span class="language-name">Hindi</span>
-                            <span class="language-level">Full Professional</span>
+                            <div class="language-badges">
+                                <img src="https://img.shields.io/badge/-Hindi-2D3748?style=flat-square&logo=language&logoColor=white" alt="Hindi">
+                                <img src="https://img.shields.io/badge/-Full%20Professional-2D3748?style=flat-square" alt="Full Professional">
+                            </div>
                         </div>
                         <div class="language-item">
-                            <span class="language-name">Malayalam</span>
-                            <span class="language-level">Native</span>
+                            <div class="language-badges">
+                                <img src="https://img.shields.io/badge/-Malayalam-2D3748?style=flat-square&logo=language&logoColor=white" alt="Malayalam">
+                                <img src="https://img.shields.io/badge/-Native-2D3748?style=flat-square" alt="Native">
+                            </div>
                         </div>
                         <div class="language-item">
-                            <span class="language-name">Tamil</span>
-                            <span class="language-level">Working</span>
+                            <div class="language-badges">
+                                <img src="https://img.shields.io/badge/-Tamil-2D3748?style=flat-square&logo=language&logoColor=white" alt="Tamil">
+                                <img src="https://img.shields.io/badge/-Working-2D3748?style=flat-square" alt="Working">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,21 +129,34 @@ title: About
                 <i class="fas fa-book"></i>
                 <h3>Reading</h3>
                 <p>Avid reader with a particular love for science fiction and fantasy</p>
+                <div class="interest-badges">
+                    <img src="https://img.shields.io/badge/-Science%20Fiction-2D3748?style=flat-square&logo=book&logoColor=white" alt="Science Fiction">
+                    <img src="https://img.shields.io/badge/-Fantasy-2D3748?style=flat-square&logo=book&logoColor=white" alt="Fantasy">
+                </div>
             </div>
             <div class="interest-item">
                 <i class="fas fa-headphones"></i>
                 <h3>Audiobooks</h3>
                 <p>Frequently immersed in audiobooks and digital reading</p>
+                <div class="interest-badges">
+                    <img src="https://img.shields.io/badge/-Audiobooks-2D3748?style=flat-square&logo=headphones&logoColor=white" alt="Audiobooks">
+                </div>
             </div>
             <div class="interest-item">
                 <i class="fas fa-plane"></i>
                 <h3>Flight Simulation</h3>
                 <p>Virtual piloting of Airbus A320 neo in Microsoft Flight Simulator</p>
+                <div class="interest-badges">
+                    <img src="https://img.shields.io/badge/-Flight%20Simulator-2D3748?style=flat-square&logo=plane&logoColor=white" alt="Flight Simulator">
+                </div>
             </div>
             <div class="interest-item">
                 <i class="fas fa-brain"></i>
                 <h3>Continuous Learning</h3>
                 <p>Always exploring new technologies and concepts</p>
+                <div class="interest-badges">
+                    <img src="https://img.shields.io/badge/-Lifelong%20Learning-2D3748?style=flat-square&logo=graduation-cap&logoColor=white" alt="Lifelong Learning">
+                </div>
             </div>
         </div>
     </div>
@@ -159,9 +209,10 @@ title: About
 
 .feature-list li {
     display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 2.5rem;
     position: relative;
 }
 
@@ -169,6 +220,24 @@ title: About
     position: absolute;
     left: 0;
     color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.feature-list li span {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tech-badges img {
+    height: 20px;
+    margin: 0;
 }
 
 .cert-grid {
@@ -197,14 +266,15 @@ title: About
     font-size: 1.1rem;
 }
 
-.cert-content ul {
-    list-style: none;
-    padding: 0;
+.cert-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.cert-content li {
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+.cert-badges img {
+    height: 20px;
+    margin: 0;
 }
 
 .cert-meta {
@@ -222,20 +292,21 @@ title: About
 .language-item {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.5rem;
     padding: 1rem;
     background: var(--light-gray);
     border-radius: 8px;
 }
 
-.language-name {
-    font-weight: 600;
-    color: var(--primary-color);
+.language-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.language-level {
-    font-size: 0.9rem;
-    color: var(--text-muted);
+.language-badges img {
+    height: 20px;
+    margin: 0;
 }
 
 .interests-section {
@@ -271,6 +342,19 @@ title: About
 .interest-item p {
     color: var(--text-color);
     font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.interest-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.interest-badges img {
+    height: 20px;
+    margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -288,6 +372,10 @@ title: About
 
     .interests-grid {
         grid-template-columns: 1fr;
+    }
+
+    .feature-list li {
+        padding-left: 2rem;
     }
 }
 </style> 
