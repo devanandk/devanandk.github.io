@@ -157,6 +157,19 @@ title: Experience
     background-color: var(--secondary-color);
 }
 
+/* Add vertical timeline line connecting the date boxes */
+.timeline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--secondary-color) 50%, transparent 50%);
+    background-size: 2px 16px;
+    z-index: 0;
+}
+
 .timeline-item {
     position: relative;
     margin-bottom: 3rem;
@@ -179,6 +192,19 @@ title: Experience
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    z-index: 1; /* Ensure the date boxes appear above the dotted line */
+}
+
+/* Add connecting nodes for each timeline item */
+.timeline-date::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transform: translateY(-50%);
 }
 
 .timeline-date img {
@@ -280,6 +306,18 @@ title: Experience
     .timeline-date {
         width: auto;
         align-self: flex-start;
+    }
+    
+    /* Adjust vertical line for mobile */
+    .timeline::after {
+        left: 30px;
+    }
+    
+    /* Adjust connector for mobile */
+    .timeline-date::after {
+        right: auto;
+        left: -10px;
+        width: 20px;
     }
 
     .timeline-item .card {

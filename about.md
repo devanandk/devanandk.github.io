@@ -40,8 +40,7 @@ title: About
                     <div class="education-certifications">
                         <div class="education-item">
                             <h3>Education</h3>
-                            <p>Bachelor of Engineering</p>
-                            <p>Computer Science</p>
+                            <p>Bachelor of Engineering, Computer Science and Engineering</p>
                             <p class="cert-meta">Anna University, Chennai</p>
                         </div>
                         <div class="certification-item">
