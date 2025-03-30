@@ -63,24 +63,24 @@ title: About
 
                 <div class="about-section">
                     <h2 class="section-subtitle"><i class="fas fa-language"></i> Languages</h2>
-                    <ul class="language-list">
-                        <li class="language-item-vertical">
+                    <div class="languages-container">
+                        <div class="language-item-simple">
                             <span class="language-name">English</span>
                             <img src="https://img.shields.io/badge/-Full%20Professional%20Proficiency-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Full Professional Proficiency">
-                        </li>
-                        <li class="language-item-vertical">
+                        </div>
+                        <div class="language-item-simple">
                             <span class="language-name">Hindi</span>
                             <img src="https://img.shields.io/badge/-Full%20Professional%20Proficiency-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Full Professional Proficiency">
-                        </li>
-                        <li class="language-item-vertical">
+                        </div>
+                        <div class="language-item-simple">
                             <span class="language-name">Malayalam</span>
                             <img src="https://img.shields.io/badge/-Native%20Speaker-2D3748?style=flat-square&logo=star&logoColor=white" alt="Native Speaker">
-                        </li>
-                        <li class="language-item-vertical">
+                        </div>
+                        <div class="language-item-simple">
                             <span class="language-name">Tamil</span>
                             <img src="https://img.shields.io/badge/-Working%20Knowledge-2D3748?style=flat-square&logo=book&logoColor=white" alt="Working Knowledge">
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -515,6 +515,30 @@ title: About
     margin: 0;
 }
 
+.languages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.language-item-simple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.language-item-simple:last-child {
+    border-bottom: none;
+}
+
+.language-name {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
 .language-item-vertical {
     display: flex;
     justify-content: space-between;
@@ -529,12 +553,6 @@ title: About
 .language-item-vertical:hover {
     transform: translateY(-2px);
     background: var(--card-bg);
-}
-
-.language-name {
-    font-weight: 600;
-    color: var(--primary-color);
-    font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {
@@ -574,6 +592,13 @@ title: About
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+    }
+    
+    .language-item-simple {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.75rem 0;
     }
 }
 </style> 
