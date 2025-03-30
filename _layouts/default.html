@@ -6,6 +6,7 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     {% seo %}
     {% feed_meta %}
     {% if jekyll.environment == 'production' and site.google_analytics %}
@@ -14,51 +15,52 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="container">
-            <nav class="main-nav">
-                <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
-                <div class="nav-right">
-                    <button class="theme-toggle" aria-label="Toggle theme">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="mobile-menu-toggle" aria-label="Toggle Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <ul class="nav-links">
-                        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                        <li><a href="{{ '/about' | relative_url }}">About</a></li>
-                        <li><a href="{{ '/experience' | relative_url }}">Experience</a></li>
-                        <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
-                        <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav class="main-nav container">
+            <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="{{ '/about' | relative_url }}">About</a></li>
+                    <li><a href="{{ '/experience' | relative_url }}">Experience</a></li>
+                    <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+                    <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <main class="site-content">
+    <main class="site-main">
         {{ content }}
     </main>
 
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Connect With Me</h3>
-                    <div class="social-links">
-                        {% for link in site.author.links %}
-                            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
-                                <i class="{{ link.icon }}"></i>
-                                <span>{{ link.label }}</span>
-                            </a>
-                        {% endfor %}
-                    </div>
+                <div class="footer-links">
+                    <a href="{{ '/about' | relative_url }}">About</a>
+                    <a href="{{ '/experience' | relative_url }}">Experience</a>
+                    <a href="{{ '/projects' | relative_url }}">Projects</a>
+                    <a href="{{ '/contact' | relative_url }}">Contact</a>
                 </div>
-                <div class="footer-section">
-                    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/devanandk" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/devanandkmenon" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:devanand1234@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
+                <p class="copyright">&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
             </div>
         </div>
     </footer>
