@@ -7,107 +7,156 @@ title: Projects
 
 ## Banking & Enterprise Systems
 
-### MiRevenue Strategic Billing Project - Barclays Bank UK
+### Loan Lifecycle Management System (LLMS) - SBI International
+**Duration:** 2024 - Present  
+**Company:** State Bank of India (GITC)
+
+Led development of cloud-native solution for SBI's international operations:
+- Architected and implemented cloud-native solution deployed on Podman containers
+- Designed secure document management with AES-256 encryption
+- Implemented automated workflow management and real-time tracking
+- Ensured regulatory compliance across multiple countries
+
+**Technologies:** Java, Spring Boot, Podman, Oracle 19c, PL/SQL, Kubernetes, Security
+
+### Report Generation Engine - SBI Foreign Offices
+**Duration:** 2023 - 2024  
+**Company:** State Bank of India (GITC)
+
+Advanced reporting system with comprehensive security features:
+- Developed multi-format output system (PDF, Excel, Word, HTML, CSV)
+- Implemented AES-256 encryption for sensitive data
+- Created customizable report templates
+- Built automated report scheduling system
+
+**Technologies:** Java, Jasper Reports, Oracle 19c, Spring Boot, Security
+
+### Report Distribution System (ReDiS)
+**Duration:** 2022 - 2023  
+**Company:** State Bank of India (GITC)
+
+Enterprise-scale data aggregation system:
+- Implemented Java-based agent across 120+ core banking servers
+- Designed centralized report distribution mechanism
+- Created real-time data synchronization system
+- Built fault-tolerant architecture for high availability
+
+**Technologies:** Java, Distributed Systems, Oracle 19c, Spring Boot
+
+### MiRevenue Strategic Billing - Barclays Bank UK
 **Duration:** May 2014 - Jul 2016  
 **Company:** Zafin
 
-Implementation of Zafin's miRevenue PPLM platform for Barclays Bank UK, focusing on:
-- Design and development of critical business function Jasper reports
-- Java development and codebase maintenance
-- Integration with banking systems
+Implementation of Zafin's miRevenue PPLM platform:
+- Designed critical business function Jasper reports
+- Developed backend services for data ingestion
+- Created complex financial reporting solutions
+- Collaborated with Barclays and Capgemini teams
 
-**Technologies:** Java, Spring MVC, Jasper Reports, PL/SQL, Microservices, RESTful APIs, Maven, Git
+**Technologies:** Java, Spring Framework, Oracle, Jasper Reports, JRXML
 
 ## Integration & Automation Projects
+
+### Core Banking Integration Hub
+**Duration:** 2023 - Present  
+**Company:** State Bank of India (GITC)
+
+Central integration platform for banking operations:
+- Designed event-driven architecture for real-time processing
+- Implemented message transformation and routing
+- Created monitoring and alerting system
+- Handled millions of daily transactions
+
+**Technologies:** Apache Kafka, Spring Boot, Oracle 19c, API Gateway
 
 ### SKB Europe – Amazon EDI Connection
 **Duration:** Aug 2013 - Apr 2015  
 **Company:** Faes Packaging Solutions
 
-Automated order processing and invoicing system between SKB Europe and Amazon:
-- Enhanced EDI Transaction Connection for automated order processing
-- Implemented validation methods for ANSI X12 Format data consistency
-- Optimized system to handle increasing order volumes
-- Achieved significant bug reduction in EDI connections
+Automated order processing system:
+- Enhanced EDI Transaction Connection
+- Implemented ANSI X12 Format validation
+- Optimized for high-volume order processing
+- Achieved significant reduction in processing errors
 
-**Technologies:** Java, Spring MVC, ESB, Microservices, RPA, RESTful APIs, PL/SQL
-
-### StackAssist - Faes Packaging Concepts
-**Duration:** Jul 2014 - Apr 2015  
-**Company:** Faes Packaging Solutions
-
-Developed comprehensive backend services for FPC's StackAssist stacking solutions:
-- Built RESTful services on UltraESB
-- Implemented JMS-based queuing system with timeout management
-- Created PDF generation system using JasperReports
-- Designed centralized order tracking and notification system
-- Handled multiple file format processing (Excel, XML)
-
-**Technologies:** Java, Spring MVC, JasperReports, ESB, RESTful APIs, JMS, XML Processing
+**Technologies:** Java, Spring MVC, ESB, RPA, EDI
 
 ### ASML E-Invoicing with Ariba Network
 **Duration:** Oct 2013 - Dec 2013  
 **Company:** Faes Packaging Solutions
 
-Automated e-Invoicing solution with zero production issues:
-- Implemented cXML 1.2.024 Standard compliance
-- Developed direct ERP system integration
-- Created file polling proxy service on UltraESB
-- Achieved flawless execution track record
+Zero-defect e-Invoicing solution:
+- Implemented cXML 1.2.024 Standard
+- Created direct ERP system integration
+- Developed file polling proxy service
+- Achieved flawless production track record
 
-**Technologies:** Java, Spring MVC, ESB, cXML, Microservices, RESTful APIs
+**Technologies:** Java, UltraESB, cXML, ERP Integration
 
-## Web Applications
+## Analytics & Reporting Solutions
+
+### Enterprise Analytics Platform
+**Duration:** 2023 - Present  
+**Company:** State Bank of India (GITC)
+
+Comprehensive analytics solution:
+- Implemented Apache Airflow for data pipelines
+- Created Apache Superset dashboards
+- Designed data warehousing solution
+- Built automated reporting system
+
+**Technologies:** Apache Airflow, Apache Superset, Oracle 19c, Python
 
 ### Vendor Rating Portal - Faes Group BV
 **Duration:** Mar 2014 - May 2014  
 **Company:** Faes Packaging Solutions
 
-Supply Chain Management web application:
-- Developed secure ESB proxy for ERP data access
-- Created automated data synchronization system
-- Implemented interactive supplier performance dashboard
-- Built custom WordPress plugin for administration
-- Integrated Google visualization libraries
+Supply Chain Analytics platform:
+- Built secure ERP data integration
+- Created automated data synchronization
+- Implemented interactive dashboards
+- Developed supplier rating system
 
-**Technologies:** WordPress, Java, jQuery, Google Visualization, ESB, RESTful APIs
+**Technologies:** WordPress, Java, jQuery, Google Visualization
 
-### SKB Europe Download Center
-**Duration:** May 2014 - Apr 2015  
-**Company:** Faes Packaging Solutions
+## Cloud & Infrastructure Projects
 
-Marketing data distribution portal:
-- Created WordPress-based file distribution system
-- Implemented user privilege management
-- Developed activity tracking system
-- Built intuitive administration panel
+### Cloud Migration Initiative
+**Duration:** 2023 - Present  
+**Company:** State Bank of India (GITC)
 
-**Technologies:** WordPress, Java, ESB, RESTful APIs, JavaScript
+Large-scale cloud transformation:
+- Architected migration of core banking applications
+- Managed 20+ Kubernetes clusters
+- Implemented cloud-native patterns
+- Ensured security and compliance
 
-### Case Creator Website
-**Duration:** Aug 2013 - Sep 2013  
-**Company:** Faes Packaging Solutions
-
-Custom case interior design website enhancements:
-- Implemented measurement tools using Raphaël.js
-- Created dynamic scaling ruler system
-- Developed portable and customizable design tools
-- Enhanced user interface for case design
-
-**Technologies:** JavaScript, Raphaël.js, Java, Spring MVC, RESTful APIs
+**Technologies:** Kubernetes, Podman, Spring Boot, Cloud-native tools
 
 ## Research & Development
+
+### AI & ML Initiatives
+**Duration:** 2023 - Present  
+**Company:** State Bank of India (GITC)
+
+Exploration of AI applications in banking:
+- Implemented RAG pipelines
+- Explored LLM applications
+- Created proof-of-concept solutions
+- Evaluated AI tools and frameworks
+
+**Technologies:** Python, N8N, Various LLM models
 
 ### 3D Contour and Depth Estimation
 **Duration:** Jan 2014 - Mar 2014  
 **Company:** Faes Packaging Solutions
 
-Proof of concept for 3D modeling:
+Advanced imaging proof of concept:
 - Developed image processing system
-- Implemented multi-view object analysis
 - Created 3D model generation pipeline
+- Implemented multi-view analysis
 
-**Technologies:** Python, Git, RPA
+**Technologies:** Python, OpenCV, Image Processing
 
 <section class="section">
     <div class="container">

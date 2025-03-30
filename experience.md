@@ -140,47 +140,71 @@ title: Experience
 <style>
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
     background-color: var(--secondary-color);
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 .timeline-date {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     background-color: var(--secondary-color);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.875rem;
-    z-index: 1;
+    min-width: 120px;
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .timeline-item .card {
-    width: calc(50% - 2rem);
-    margin-left: auto;
+    flex: 1;
     position: relative;
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.timeline-item:nth-child(odd) .card {
-    margin-left: 0;
-    margin-right: auto;
+.timeline-item .card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.timeline-item .card h3 {
+    color: var(--secondary-color);
+    margin: 1rem 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.timeline-item .card ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.timeline-item .card li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
 .tech-stack {
@@ -199,23 +223,18 @@ title: Experience
 }
 
 @media (max-width: 768px) {
-    .timeline::before {
-        left: 0;
+    .timeline-item {
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .timeline-date {
-        left: 0;
-        transform: none;
+        width: auto;
+        align-self: flex-start;
     }
 
     .timeline-item .card {
-        width: calc(100% - 2rem);
-        margin-left: 2rem;
-    }
-
-    .timeline-item:nth-child(odd) .card {
-        margin-left: 2rem;
-        margin-right: 0;
+        width: 100%;
     }
 }
 </style> 
