@@ -3,6 +3,112 @@ layout: default
 title: Projects
 ---
 
+# Notable Projects
+
+## Banking & Enterprise Systems
+
+### MiRevenue Strategic Billing Project - Barclays Bank UK
+**Duration:** May 2014 - Jul 2016  
+**Company:** Zafin
+
+Implementation of Zafin's miRevenue PPLM platform for Barclays Bank UK, focusing on:
+- Design and development of critical business function Jasper reports
+- Java development and codebase maintenance
+- Integration with banking systems
+
+**Technologies:** Java, Spring MVC, Jasper Reports, PL/SQL, Microservices, RESTful APIs, Maven, Git
+
+## Integration & Automation Projects
+
+### SKB Europe – Amazon EDI Connection
+**Duration:** Aug 2013 - Apr 2015  
+**Company:** Faes Packaging Solutions
+
+Automated order processing and invoicing system between SKB Europe and Amazon:
+- Enhanced EDI Transaction Connection for automated order processing
+- Implemented validation methods for ANSI X12 Format data consistency
+- Optimized system to handle increasing order volumes
+- Achieved significant bug reduction in EDI connections
+
+**Technologies:** Java, Spring MVC, ESB, Microservices, RPA, RESTful APIs, PL/SQL
+
+### StackAssist - Faes Packaging Concepts
+**Duration:** Jul 2014 - Apr 2015  
+**Company:** Faes Packaging Solutions
+
+Developed comprehensive backend services for FPC's StackAssist stacking solutions:
+- Built RESTful services on UltraESB
+- Implemented JMS-based queuing system with timeout management
+- Created PDF generation system using JasperReports
+- Designed centralized order tracking and notification system
+- Handled multiple file format processing (Excel, XML)
+
+**Technologies:** Java, Spring MVC, JasperReports, ESB, RESTful APIs, JMS, XML Processing
+
+### ASML E-Invoicing with Ariba Network
+**Duration:** Oct 2013 - Dec 2013  
+**Company:** Faes Packaging Solutions
+
+Automated e-Invoicing solution with zero production issues:
+- Implemented cXML 1.2.024 Standard compliance
+- Developed direct ERP system integration
+- Created file polling proxy service on UltraESB
+- Achieved flawless execution track record
+
+**Technologies:** Java, Spring MVC, ESB, cXML, Microservices, RESTful APIs
+
+## Web Applications
+
+### Vendor Rating Portal - Faes Group BV
+**Duration:** Mar 2014 - May 2014  
+**Company:** Faes Packaging Solutions
+
+Supply Chain Management web application:
+- Developed secure ESB proxy for ERP data access
+- Created automated data synchronization system
+- Implemented interactive supplier performance dashboard
+- Built custom WordPress plugin for administration
+- Integrated Google visualization libraries
+
+**Technologies:** WordPress, Java, jQuery, Google Visualization, ESB, RESTful APIs
+
+### SKB Europe Download Center
+**Duration:** May 2014 - Apr 2015  
+**Company:** Faes Packaging Solutions
+
+Marketing data distribution portal:
+- Created WordPress-based file distribution system
+- Implemented user privilege management
+- Developed activity tracking system
+- Built intuitive administration panel
+
+**Technologies:** WordPress, Java, ESB, RESTful APIs, JavaScript
+
+### Case Creator Website
+**Duration:** Aug 2013 - Sep 2013  
+**Company:** Faes Packaging Solutions
+
+Custom case interior design website enhancements:
+- Implemented measurement tools using Raphaël.js
+- Created dynamic scaling ruler system
+- Developed portable and customizable design tools
+- Enhanced user interface for case design
+
+**Technologies:** JavaScript, Raphaël.js, Java, Spring MVC, RESTful APIs
+
+## Research & Development
+
+### 3D Contour and Depth Estimation
+**Duration:** Jan 2014 - Mar 2014  
+**Company:** Faes Packaging Solutions
+
+Proof of concept for 3D modeling:
+- Developed image processing system
+- Implemented multi-view object analysis
+- Created 3D model generation pipeline
+
+**Technologies:** Python, Git, RPA
+
 <section class="section">
     <div class="container">
         <h1 class="section-title">Featured Projects</h1>
