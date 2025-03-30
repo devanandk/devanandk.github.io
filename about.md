@@ -189,6 +189,11 @@ title: About
 
 .about-intro {
     margin-bottom: 3rem;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
 }
 
 .lead-text {
@@ -201,45 +206,69 @@ title: About
     margin-bottom: 3rem;
     padding: 2rem;
     background: var(--card-bg);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
 }
 
 .section-subtitle {
     color: var(--primary-color);
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-subtitle i {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
 }
 
 .section-intro {
     color: var(--text-color);
     margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 .feature-list {
     list-style: none;
     padding: 0;
+    display: grid;
+    gap: 1.5rem;
 }
 
 .feature-list li {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    padding-left: 2.5rem;
-    position: relative;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.feature-list li:hover {
+    transform: translateY(-2px);
 }
 
 .feature-list li i {
-    position: absolute;
-    left: 0;
     color: var(--secondary-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .feature-list li span {
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .tech-badges {
@@ -252,64 +281,88 @@ title: About
 .tech-badges img {
     height: 20px;
     margin: 0;
+    transition: transform 0.2s ease;
+}
+
+.tech-badges img:hover {
+    transform: translateY(-2px);
 }
 
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 1.5rem;
 }
 
 .cert-item {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
+    padding: 2rem;
     background: var(--light-gray);
-    border-radius: 8px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.cert-item:hover {
+    transform: translateY(-2px);
 }
 
 .cert-item i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--secondary-color);
 }
 
 .cert-content h3 {
     color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.cert-content p {
+    color: var(--text-color);
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.cert-meta {
+    font-size: 0.95rem;
+    color: var(--text-muted);
 }
 
 .cert-badges {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .cert-badges img {
     height: 20px;
     margin: 0;
+    transition: transform 0.2s ease;
 }
 
-.cert-meta {
-    font-size: 0.9rem;
-    color: var(--text-muted);
+.cert-badges img:hover {
+    transform: translateY(-2px);
 }
 
 .language-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     margin-top: 1.5rem;
 }
 
 .language-item {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    padding: 1.25rem;
+    gap: 1rem;
+    padding: 2rem;
     background: var(--light-gray);
-    border-radius: 8px;
+    border-radius: 12px;
     transition: transform 0.2s ease;
 }
 
@@ -320,18 +373,19 @@ title: About
 .language-header {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
 }
 
 .language-header i {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     color: var(--secondary-color);
 }
 
 .language-header h3 {
     color: var(--primary-color);
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .proficiency-badge {
@@ -342,15 +396,21 @@ title: About
 .proficiency-badge img {
     height: 20px;
     margin: 0;
+    transition: transform 0.2s ease;
+}
+
+.proficiency-badge img:hover {
+    transform: translateY(-2px);
 }
 
 .interests-section {
     background-color: var(--light-gray);
+    padding: 3rem 0;
 }
 
 .interests-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -359,37 +419,52 @@ title: About
     text-align: center;
     padding: 2rem;
     background: var(--card-bg);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.interest-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
 }
 
 .interest-item i {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .interest-item h3 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .interest-item p {
     color: var(--text-color);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 .interest-badges {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .interest-badges img {
     height: 20px;
     margin: 0;
+    transition: transform 0.2s ease;
+}
+
+.interest-badges img:hover {
+    transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -410,7 +485,19 @@ title: About
     }
 
     .feature-list li {
-        padding-left: 2rem;
+        padding: 1.25rem;
+    }
+
+    .cert-item {
+        padding: 1.5rem;
+    }
+
+    .language-item {
+        padding: 1.5rem;
+    }
+
+    .interest-item {
+        padding: 1.5rem;
     }
 }
 </style> 

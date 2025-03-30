@@ -9,12 +9,11 @@ title: Experience
         
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">
-                    <img src="https://img.shields.io/badge/Current-Position-brightgreen" alt="Current Position">
+                <div class="timeline-date">                    
                     <div>Apr 2024 - Present</div>
                 </div>
                 <div class="card">
-                    <h2>Deputy Manager (Systems) - State Bank of India (GITC), Navi Mumbai</h2>
+                    <h2>Deputy Manager (Systems) - State Bank of India, Global IT Centre, Navi Mumbai</h2>
                     <p>Leading enterprise-scale technical initiatives for international banking operations, including development of the bank's fully in-house Loan Lifecycle Management System (LLMS).</p>
                     
                     <h3>Key Achievements:</h3>
@@ -42,7 +41,7 @@ title: Experience
             <div class="timeline-item">
                 <div class="timeline-date">Aug 2016 - Mar 2024</div>
                 <div class="card">
-                    <h2>Assistant Manager (Systems) - State Bank of India (GITC), Navi Mumbai</h2>
+                    <h2>Assistant Manager (Systems) - State Bank of India, Global IT Centre, Navi Mumbai</h2>
                     <p>Led development initiatives across SBI's international network while managing relationships with IT service providers.</p>
                     
                     <h3>Key Achievements:</h3>

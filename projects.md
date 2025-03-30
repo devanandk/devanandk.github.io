@@ -383,41 +383,46 @@ title: Projects
 
 .project-card {
     background-color: var(--card-bg);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
     border: 1px solid var(--border-color);
+    overflow: hidden;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 1.75rem;
 }
 
 .project-header {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .project-header h2 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     font-size: 1.5rem;
+    line-height: 1.3;
 }
 
 .project-meta {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
     font-size: 0.875rem;
     color: var(--text-muted);
 }
 
 .project-company {
     font-weight: 500;
+    color: var(--secondary-color);
 }
 
 .project-status {
@@ -429,6 +434,7 @@ title: Projects
     color: var(--text-color);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .project-details {
@@ -437,20 +443,24 @@ title: Projects
 
 .project-details h3 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .project-details ul {
     list-style-type: none;
     padding-left: 0;
+    display: grid;
+    gap: 0.75rem;
 }
 
 .project-details li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     padding-left: 1.5rem;
     position: relative;
     color: var(--text-color);
+    font-size: 0.95rem;
 }
 
 .project-details li::before {
@@ -458,17 +468,25 @@ title: Projects
     color: var(--secondary-color);
     position: absolute;
     left: 0;
+    font-weight: bold;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .project-tags img {
     height: 20px;
     margin: 0;
+    transition: transform 0.2s ease;
+}
+
+.project-tags img:hover {
+    transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -480,6 +498,10 @@ title: Projects
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+    }
+
+    .project-content {
+        padding: 1.25rem;
     }
 }
 </style> 
