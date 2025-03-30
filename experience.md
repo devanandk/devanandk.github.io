@@ -147,7 +147,8 @@ title: Experience
     padding: 2rem 0;
 }
 
-.timeline::before {
+/* Remove the horizontal line at the top */
+/* .timeline::before {
     content: '';
     position: absolute;
     top: 0;
@@ -155,33 +156,22 @@ title: Experience
     width: 100%;
     height: 2px;
     background-color: var(--secondary-color);
-}
+} */
 
-/* Modified vertical timeline line */
+/* Improved vertical timeline line */
 .timeline::after {
     content: '';
     position: absolute;
+    top: 70px;
     bottom: 0;
     left: 60px;
-    width: 2px;
-    height: calc(100% - 70px); /* Stop before reaching the top date box */
-    background-image: linear-gradient(to bottom, var(--secondary-color) 50%, transparent 50%);
-    background-size: 2px 16px;
+    width: 3px;
+    background: linear-gradient(180deg, 
+        var(--secondary-color) 0%,
+        var(--primary-color) 100%);
+    opacity: 0.6;
+    border-radius: 3px;
     z-index: 0;
-}
-
-/* Add filled circle at the bottom */
-.timeline::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 60px;
-    width: 12px;
-    height: 12px;
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-    transform: translateX(-5px);
-    z-index: 1;
 }
 
 .timeline-item {
@@ -195,7 +185,7 @@ title: Experience
 
 .timeline-date {
     position: relative;
-    background-color: var(--secondary-color);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -206,24 +196,37 @@ title: Experience
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    z-index: 1; /* Ensure the date boxes appear above the dotted line */
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-/* Add connecting nodes for each timeline item */
+/* Enhanced connecting nodes for each timeline item */
 .timeline-date::after {
     content: '';
     position: absolute;
-    right: -10px;
+    right: -15px;
     top: 50%;
-    width: 20px;
-    height: 2px;
-    background-color: var(--secondary-color);
+    width: 15px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
     transform: translateY(-50%);
+    opacity: 0.8;
 }
 
-.timeline-date img {
-    height: 20px;
-    margin: 0;
+/* Add a dot for each timeline item */
+.timeline-date::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    box-shadow: 0 0 0 3px rgba(var(--secondary-color-rgb), 0.2);
 }
 
 .timeline-item .card {
@@ -327,16 +330,16 @@ title: Experience
         left: 30px;
     }
     
-    /* Adjust bottom circle for mobile */
-    .timeline::before {
-        left: 30px;
-    }
-    
     /* Adjust connector for mobile */
     .timeline-date::after {
         right: auto;
         left: -10px;
-        width: 20px;
+        width: 15px;
+    }
+    
+    /* Adjust dot position for mobile */
+    .timeline-date::before {
+        left: -25px;
     }
 
     .timeline-item .card {

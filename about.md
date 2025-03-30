@@ -573,7 +573,13 @@ title: About
     }
 
     .feature-list li {
-        padding: 1.25rem;
+        padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+        position: relative;
+    }
+    
+    .feature-list li i {
+        left: 0.75rem;
+        top: 0.75rem;
     }
 
     .cert-item {
