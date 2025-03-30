@@ -14,8 +14,7 @@ title: Projects
                     <div class="project-header">
                         <h2>Loan Lifecycle Management System (LLMS)</h2>
                         <div class="project-meta">
-                            <span class="project-date">2024 - Present</span>
-                            <span class="project-company">State Bank of India (GITC)</span>
+                            <span class="project-company">State Bank of India</span>
                             <span class="project-status">
                                 <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Active">
                             </span>
@@ -46,10 +45,9 @@ title: Projects
                     <div class="project-header">
                         <h2>Report Generation Engine</h2>
                         <div class="project-meta">
-                            <span class="project-date">2023 - 2024</span>
-                            <span class="project-company">State Bank of India (GITC)</span>
+                            <span class="project-company">State Bank of India</span>
                             <span class="project-status">
-                                <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
+                                <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Active">
                             </span>
                         </div>
                     </div>
@@ -65,7 +63,7 @@ title: Projects
                     </div>
                     <div class="project-tags">
                         <img src="https://img.shields.io/badge/-Oracle%20GoldenGate-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle GoldenGate">
-                        <img src="https://img.shields.io/badge/-Jasper%20Reports-007396?style=flat-square" alt="Jasper Reports">
+                        <img src="https://img.shields.io/badge/-Jasper%20Reports-007396?style=flat-square&logo=java&logoColor=white" alt="Jasper Reports">
                         <img src="https://img.shields.io/badge/-PL%2FSQL-F80000?style=flat-square&logo=oracle&logoColor=white" alt="PL/SQL">
                         <img src="https://img.shields.io/badge/-Security-2D3748?style=flat-square&logo=shield-check&logoColor=white" alt="Security">
                     </div>
@@ -77,10 +75,9 @@ title: Projects
                     <div class="project-header">
                         <h2>Report Distribution System (ReDiS)</h2>
                         <div class="project-meta">
-                            <span class="project-date">2022 - 2023</span>
-                            <span class="project-company">State Bank of India (GITC)</span>
+                            <span class="project-company">State Bank of India</span>
                             <span class="project-status">
-                                <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
+                                <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Active">
                             </span>
                         </div>
                     </div>
@@ -108,10 +105,9 @@ title: Projects
                     <div class="project-header">
                         <h2>IT-FO Change Management Portal</h2>
                         <div class="project-meta">
-                            <span class="project-date">2022 - 2023</span>
-                            <span class="project-company">State Bank of India (GITC)</span>
+                            <span class="project-company">State Bank of India</span>
                             <span class="project-status">
-                                <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
+                                <img src="https://img.shields.io/badge/Status-Active-brightgreen" alt="Active">
                             </span>
                         </div>
                     </div>
@@ -139,7 +135,6 @@ title: Projects
                     <div class="project-header">
                         <h2>MiRevenue Strategic Billing</h2>
                         <div class="project-meta">
-                            <span class="project-date">May 2014 - Jul 2016</span>
                             <span class="project-company">Zafin</span>
                             <span class="project-status">
                                 <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
@@ -159,7 +154,7 @@ title: Projects
                     <div class="project-tags">
                         <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java">
                         <img src="https://img.shields.io/badge/-Spring%20Framework-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Framework">
-                        <img src="https://img.shields.io/badge/-Jasper%20Reports-007396?style=flat-square" alt="Jasper Reports">
+                        <img src="https://img.shields.io/badge/-Jasper%20Reports-007396?style=flat-square&logo=java&logoColor=white" alt="Jasper Reports">
                         <img src="https://img.shields.io/badge/-FinTech-2D3748?style=flat-square&logo=bank&logoColor=white" alt="FinTech">
                     </div>
                 </div>
@@ -170,7 +165,6 @@ title: Projects
                     <div class="project-header">
                         <h2>SKB Europe – Amazon EDI Connection</h2>
                         <div class="project-meta">
-                            <span class="project-date">Aug 2013 - Apr 2015</span>
                             <span class="project-company">Faes Packaging Solutions</span>
                             <span class="project-status">
                                 <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
@@ -201,7 +195,6 @@ title: Projects
                     <div class="project-header">
                         <h2>ASML E-Invoicing with Ariba Network</h2>
                         <div class="project-meta">
-                            <span class="project-date">Oct 2013 - Dec 2013</span>
                             <span class="project-company">Faes Packaging Solutions</span>
                             <span class="project-status">
                                 <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
@@ -221,7 +214,7 @@ title: Projects
                     <div class="project-tags">
                         <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java">
                         <img src="https://img.shields.io/badge/-Spring%20MVC-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring MVC">
-                        <img src="https://img.shields.io/badge/-cXML-2D3748?style=flat-square" alt="cXML">
+                        <img src="https://img.shields.io/badge/-cXML-2D3748?style=flat-square&logo=code&logoColor=white" alt="cXML">
                         <img src="https://img.shields.io/badge/-ESB-2D3748?style=flat-square&logo=exchange-alt&logoColor=white" alt="ESB">
                     </div>
                 </div>
@@ -232,7 +225,6 @@ title: Projects
                     <div class="project-header">
                         <h2>Vendor Rating Portal</h2>
                         <div class="project-meta">
-                            <span class="project-date">Mar 2014 - May 2014</span>
                             <span class="project-company">Faes Group BV</span>
                             <span class="project-status">
                                 <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
@@ -263,7 +255,6 @@ title: Projects
                     <div class="project-header">
                         <h2>StackAssist - Faes Packaging Concepts</h2>
                         <div class="project-meta">
-                            <span class="project-date">Jul 2014 - Apr 2015</span>
                             <span class="project-company">Faes Packaging Solutions</span>
                             <span class="project-status">
                                 <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
@@ -284,7 +275,7 @@ title: Projects
                     <div class="project-tags">
                         <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java">
                         <img src="https://img.shields.io/badge/-Spring%20MVC-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring MVC">
-                        <img src="https://img.shields.io/badge/-JasperReports-007396?style=flat-square" alt="JasperReports">
+                        <img src="https://img.shields.io/badge/-JasperReports-007396?style=flat-square&logo=java&logoColor=white" alt="JasperReports">
                         <img src="https://img.shields.io/badge/-ESB-2D3748?style=flat-square&logo=exchange-alt&logoColor=white" alt="ESB">
                         <img src="https://img.shields.io/badge/-JMS-2D3748?style=flat-square&logo=java&logoColor=white" alt="JMS">
                     </div>
@@ -296,7 +287,6 @@ title: Projects
                     <div class="project-header">
                         <h2>SKB Europe Download Center</h2>
                         <div class="project-meta">
-                            <span class="project-date">May 2014 - Apr 2015</span>
                             <span class="project-company">Faes Packaging Solutions</span>
                             <span class="project-status">
                                 <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
@@ -327,7 +317,6 @@ title: Projects
                     <div class="project-header">
                         <h2>Case Creator Website</h2>
                         <div class="project-meta">
-                            <span class="project-date">Aug 2013 - Sep 2013</span>
                             <span class="project-company">Faes Packaging Solutions</span>
                             <span class="project-status">
                                 <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
@@ -346,7 +335,7 @@ title: Projects
                     </div>
                     <div class="project-tags">
                         <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
-                        <img src="https://img.shields.io/badge/-Raphaël.js-2D3748?style=flat-square" alt="Raphaël.js">
+                        <img src="https://img.shields.io/badge/-Raphaël.js-2D3748?style=flat-square&logo=javascript&logoColor=white" alt="Raphaël.js">
                         <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java">
                         <img src="https://img.shields.io/badge/-Spring%20MVC-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring MVC">
                     </div>
@@ -358,7 +347,6 @@ title: Projects
                     <div class="project-header">
                         <h2>3D Contour and Depth Estimation</h2>
                         <div class="project-meta">
-                            <span class="project-date">Jan 2014 - Mar 2014</span>
                             <span class="project-company">Faes Packaging Solutions</span>
                             <span class="project-status">
                                 <img src="https://img.shields.io/badge/Status-Completed-blue" alt="Completed">
@@ -422,11 +410,14 @@ title: Projects
 
 .project-meta {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
     font-size: 0.875rem;
     color: var(--text-muted);
-    align-items: center;
+}
+
+.project-company {
+    font-weight: 500;
 }
 
 .project-status {
