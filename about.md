@@ -20,33 +20,33 @@ title: About
                             <i class="fas fa-cloud"></i>
                             <span>Architecting cloud-native solutions deployed on Kubernetes</span>
                             <div class="tech-badges">
-                                <img src="https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
-                                <img src="https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-                                <img src="https://img.shields.io/badge/-Cloud%20Native-2D3748?style=flat-square&logo=cloud&logoColor=white" alt="Cloud Native">
+                                <span class="badge"><i class="fab fa-kubernetes"></i> Kubernetes</span>
+                                <span class="badge"><i class="fab fa-docker"></i> Docker</span>
+                                <span class="badge"><i class="fas fa-cloud"></i> Cloud Native</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-network-wired"></i>
                             <span>Designing integration systems that connect complex banking operations</span>
                             <div class="tech-badges">
-                                <img src="https://img.shields.io/badge/-Integration-2D3748?style=flat-square&logo=network-wired&logoColor=white" alt="Integration">
-                                <img src="https://img.shields.io/badge/-Microservices-2D3748?style=flat-square&logo=server&logoColor=white" alt="Microservices">
+                                <span class="badge"><i class="fas fa-network-wired"></i> Integration</span>
+                                <span class="badge"><i class="fas fa-server"></i> Microservices</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-chart-line"></i>
                             <span>Building data-driven solutions that turn information into insights</span>
                             <div class="tech-badges">
-                                <img src="https://img.shields.io/badge/-Data%20Analytics-2D3748?style=flat-square&logo=chart-bar&logoColor=white" alt="Data Analytics">
-                                <img src="https://img.shields.io/badge/-Business%20Intelligence-2D3748?style=flat-square&logo=chart-line&logoColor=white" alt="Business Intelligence">
+                                <span class="badge"><i class="fas fa-chart-bar"></i> Data Analytics</span>
+                                <span class="badge"><i class="fas fa-chart-line"></i> Business Intelligence</span>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-shield-alt"></i>
                             <span>Implementing secure systems that comply with global banking regulations</span>
                             <div class="tech-badges">
-                                <img src="https://img.shields.io/badge/-Security-2D3748?style=flat-square&logo=shield-check&logoColor=white" alt="Security">
-                                <img src="https://img.shields.io/badge/-Compliance-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Compliance">
+                                <span class="badge"><i class="fas fa-shield-check"></i> Security</span>
+                                <span class="badge"><i class="fas fa-check-circle"></i> Compliance</span>
                             </div>
                         </li>
                     </ul>
@@ -69,9 +69,9 @@ title: About
                             <div class="cert-content">
                                 <h3>Technical Certifications</h3>
                                 <div class="cert-badges">
-                                    <img src="https://img.shields.io/badge/-Oracle%20Certified%20Professional%2C%20Java%20SE6%20Programmer-007396?style=flat-square&logo=java&logoColor=white" alt="Oracle Certified Professional, Java SE6 Programmer">
-                                    <img src="https://img.shields.io/badge/-RedHat%20System%20Administrator-EE0000?style=flat-square&logo=redhat&logoColor=white" alt="RedHat System Administrator">
-                                    <img src="https://img.shields.io/badge/-Google%20Data%20Analytics%20Professional-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google Data Analytics Professional">
+                                    <span class="badge"><i class="fab fa-java"></i> Oracle Certified Professional, Java SE6 Programmer</span>
+                                    <span class="badge"><i class="fab fa-redhat"></i> RedHat System Administrator</span>
+                                    <span class="badge"><i class="fab fa-google"></i> Google Data Analytics Professional</span>
                                 </div>
                             </div>
                         </div>
@@ -80,8 +80,8 @@ title: About
                             <div class="cert-content">
                                 <h3>AI & Development</h3>
                                 <div class="cert-badges">
-                                    <img src="https://img.shields.io/badge/-ChatGPT%20Prompt%20Engineering-2D3748?style=flat-square&logo=openai&logoColor=white" alt="ChatGPT Prompt Engineering">
-                                    <img src="https://img.shields.io/badge/-LLM%20Pair%20Programming-2D3748?style=flat-square&logo=openai&logoColor=white" alt="LLM Pair Programming">
+                                    <span class="badge"><i class="fas fa-robot"></i> ChatGPT Prompt Engineering</span>
+                                    <span class="badge"><i class="fas fa-robot"></i> LLM Pair Programming</span>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ title: About
                                 <h3>English</h3>
                             </div>
                             <div class="proficiency-badge">
-                                <img src="https://img.shields.io/badge/-Full%20Professional%20Proficiency-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Full Professional Proficiency">
+                                <span class="badge"><i class="fas fa-check-circle"></i> Full Professional Proficiency</span>
                             </div>
                         </div>
                         <div class="language-item">
@@ -106,7 +106,7 @@ title: About
                                 <h3>Hindi</h3>
                             </div>
                             <div class="proficiency-badge">
-                                <img src="https://img.shields.io/badge/-Full%20Professional%20Proficiency-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Full Professional Proficiency">
+                                <span class="badge"><i class="fas fa-check-circle"></i> Full Professional Proficiency</span>
                             </div>
                         </div>
                         <div class="language-item">
@@ -115,7 +115,7 @@ title: About
                                 <h3>Malayalam</h3>
                             </div>
                             <div class="proficiency-badge">
-                                <img src="https://img.shields.io/badge/-Native%20Speaker-2D3748?style=flat-square&logo=star&logoColor=white" alt="Native Speaker">
+                                <span class="badge"><i class="fas fa-star"></i> Native Speaker</span>
                             </div>
                         </div>
                         <div class="language-item">
@@ -124,7 +124,7 @@ title: About
                                 <h3>Tamil</h3>
                             </div>
                             <div class="proficiency-badge">
-                                <img src="https://img.shields.io/badge/-Working%20Knowledge-2D3748?style=flat-square&logo=book&logoColor=white" alt="Working Knowledge">
+                                <span class="badge"><i class="fas fa-book"></i> Working Knowledge</span>
                             </div>
                         </div>
                     </div>
@@ -143,8 +143,8 @@ title: About
                 <h3>Reading</h3>
                 <p>Avid reader with a particular love for science fiction and fantasy</p>
                 <div class="interest-badges">
-                    <img src="https://img.shields.io/badge/-Science%20Fiction-2D3748?style=flat-square&logo=book-open&logoColor=white" alt="Science Fiction">
-                    <img src="https://img.shields.io/badge/-Fantasy-2D3748?style=flat-square&logo=book-reader&logoColor=white" alt="Fantasy">
+                    <span class="badge"><i class="fas fa-book-open"></i> Science Fiction</span>
+                    <span class="badge"><i class="fas fa-book-reader"></i> Fantasy</span>
                 </div>
             </div>
             <div class="interest-item">
@@ -152,7 +152,7 @@ title: About
                 <h3>Audiobooks</h3>
                 <p>Frequently immersed in audiobooks and digital reading</p>
                 <div class="interest-badges">
-                    <img src="https://img.shields.io/badge/-Audiobooks-2D3748?style=flat-square&logo=spotify&logoColor=white" alt="Audiobooks">
+                    <span class="badge"><i class="fab fa-spotify"></i> Audiobooks</span>
                 </div>
             </div>
             <div class="interest-item">
@@ -160,8 +160,8 @@ title: About
                 <h3>Flight Simulation</h3>
                 <p>Virtual piloting of Airbus A320 neo in Microsoft Flight Simulator</p>
                 <div class="interest-badges">
-                    <img src="https://img.shields.io/badge/-Microsoft%20Flight%20Simulator-2D3748?style=flat-square&logo=microsoft&logoColor=white" alt="Microsoft Flight Simulator">
-                    <img src="https://img.shields.io/badge/-Airbus%20A320%20neo-2D3748?style=flat-square&logo=airplane&logoColor=white" alt="Airbus A320 neo">
+                    <span class="badge"><i class="fab fa-microsoft"></i> Microsoft Flight Simulator</span>
+                    <span class="badge"><i class="fas fa-plane"></i> Airbus A320 neo</span>
                 </div>
             </div>
             <div class="interest-item">
@@ -169,7 +169,7 @@ title: About
                 <h3>Continuous Learning</h3>
                 <p>Always exploring new technologies and concepts</p>
                 <div class="interest-badges">
-                    <img src="https://img.shields.io/badge/-Lifelong%20Learning-2D3748?style=flat-square&logo=udemy&logoColor=white" alt="Lifelong Learning">
+                    <span class="badge"><i class="fas fa-graduation-cap"></i> Lifelong Learning</span>
                 </div>
             </div>
         </div>
@@ -189,17 +189,14 @@ title: About
 
 .about-intro {
     margin-bottom: 3rem;
-    padding: 2rem;
-    background: var(--card-bg);
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border: 1px solid var(--border-color);
 }
 
 .lead-text {
     font-size: 1.25rem;
     line-height: 1.6;
     color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-section {
@@ -241,33 +238,27 @@ title: About
 .feature-list {
     list-style: none;
     padding: 0;
-    display: grid;
-    gap: 1.5rem;
 }
 
 .feature-list li {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    padding: 1.5rem;
-    background: var(--light-gray);
-    border-radius: 8px;
-    transition: transform 0.2s ease;
-}
-
-.feature-list li:hover {
-    transform: translateY(-2px);
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 2.5rem;
+    position: relative;
 }
 
 .feature-list li i {
+    position: absolute;
+    left: 0;
     color: var(--secondary-color);
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .feature-list li span {
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -278,14 +269,31 @@ title: About
     margin-top: 0.5rem;
 }
 
-.tech-badges img {
-    height: 20px;
-    margin: 0;
-    transition: transform 0.2s ease;
+.tech-badges .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--light-gray);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
 }
 
-.tech-badges img:hover {
+.tech-badges .badge:hover {
+    background: var(--secondary-color);
+    color: white;
     transform: translateY(-2px);
+}
+
+.tech-badges .badge i {
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+}
+
+.tech-badges .badge:hover i {
+    color: white;
 }
 
 .cert-grid {
@@ -339,14 +347,31 @@ title: About
     gap: 0.75rem;
 }
 
-.cert-badges img {
-    height: 20px;
-    margin: 0;
-    transition: transform 0.2s ease;
+.cert-badges .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--light-gray);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
 }
 
-.cert-badges img:hover {
+.cert-badges .badge:hover {
+    background: var(--secondary-color);
+    color: white;
     transform: translateY(-2px);
+}
+
+.cert-badges .badge i {
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+}
+
+.cert-badges .badge:hover i {
+    color: white;
 }
 
 .language-grid {
@@ -393,14 +418,31 @@ title: About
     justify-content: center;
 }
 
-.proficiency-badge img {
-    height: 20px;
-    margin: 0;
-    transition: transform 0.2s ease;
+.proficiency-badge .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--light-gray);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
 }
 
-.proficiency-badge img:hover {
+.proficiency-badge .badge:hover {
+    background: var(--secondary-color);
+    color: white;
     transform: translateY(-2px);
+}
+
+.proficiency-badge .badge i {
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+}
+
+.proficiency-badge .badge:hover i {
+    color: white;
 }
 
 .interests-section {
@@ -457,14 +499,31 @@ title: About
     gap: 0.75rem;
 }
 
-.interest-badges img {
-    height: 20px;
-    margin: 0;
-    transition: transform 0.2s ease;
+.interest-badges .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--light-gray);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
 }
 
-.interest-badges img:hover {
+.interest-badges .badge:hover {
+    background: var(--secondary-color);
+    color: white;
     transform: translateY(-2px);
+}
+
+.interest-badges .badge i {
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+}
+
+.interest-badges .badge:hover i {
+    color: white;
 }
 
 @media (max-width: 768px) {
