@@ -54,8 +54,8 @@ title: About
                         <div class="certification-item">
                             <h3>AI & Development</h3>
                             <ul class="cert-list">
-                                <li>ChatGPT Prompt Engineering</li>
-                                <li>LLM Pair Programming</li>
+                                <li>ChatGPT Prompt Engineering for Developers, DeepLearning.ai</li>
+                                <li>Pair Programming with a Large Language Model, DeepLearning.ai</li>
                             </ul>
                         </div>
                     </div>
