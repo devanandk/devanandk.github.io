@@ -127,24 +127,6 @@ The site is fully responsive and tested on:
 
 The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📫 Contact
-
-- Email: devanand1234@gmail.com
-- LinkedIn: [devanandkmenon](https://www.linkedin.com/in/devanandkmenon)
-- GitHub: [devanandk](https://github.com/devanandk)
-
 ## 🙏 Acknowledgments
 
 - Jekyll team for the amazing static site generator
