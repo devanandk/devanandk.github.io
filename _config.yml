@@ -1,0 +1,47 @@
+title: Devanand K
+description: Banking Technology Leader | Enterprise Integration Specialist | AI Explorer
+baseurl: ""
+url: "https://devanandk.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git/
+
+# Site author information
+author:
+  name: Devanand K
+  email: devanand1234@gmail.com
+  location: Seawoods, Navi Mumbai
+  bio: Banking Technology Leader | Enterprise Integration Specialist | AI Explorer
+  avatar: assets/images/profile.jpg
+  links:
+    - label: LinkedIn
+      icon: fab fa-linkedin
+      url: https://www.linkedin.com/in/devanandkmenon
+    - label: GitHub
+      icon: fab fa-github
+      url: https://github.com/devanandk
+    - label: Email
+      icon: fas fa-envelope
+      url: mailto:devanand1234@gmail.com
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:slug/
+  experience:
+    output: true
+    permalink: /experience/:slug/ 
