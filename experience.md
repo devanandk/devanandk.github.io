@@ -19,26 +19,11 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Cloud%20Native%20Architecture-2D3748?style=flat-square&logo=cloud&logoColor=white" alt="Cloud Native">
-                            Architected and led development of cloud-native LLMS solution deployed on Podman containers
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Multi-Format%20Reports-2D3748?style=flat-square&logo=file-alt&logoColor=white" alt="Multi-Format">
-                            Designed innovative report generation engine supporting multiple formats (PDF, Excel, Word, HTML, CSV) with AES-256 encryption
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Distributed%20Systems-2D3748?style=flat-square&logo=network-wired&logoColor=white" alt="Distributed">
-                            Implemented Java-based aggregation system across 100+ core banking servers
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Core%20Banking-2D3748?style=flat-square&logo=bank&logoColor=white" alt="Core Banking">
-                            Orchestrated annual closing exercises for core banking systems across multiple countries
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Security%20Compliance-2D3748?style=flat-square&logo=shield-check&logoColor=white" alt="Security">
-                            Managed regulatory compliance activities including VA/PT observations and security audits
-                        </li>
+                        <li>Architected and led development of cloud-native LLMS solution deployed on Podman containers</li>
+                        <li>Designed innovative report generation engine supporting multiple formats (PDF, Excel, Word, HTML, CSV) with AES-256 encryption</li>
+                        <li>Implemented Java-based aggregation system across 100+ core banking servers</li>
+                        <li>Orchestrated annual closing exercises for core banking systems across multiple countries</li>
+                        <li>Managed regulatory compliance activities including VA/PT observations and security audits</li>
                     </ul>
                     
                     <div class="tech-stack">
@@ -62,22 +47,10 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>
-                            <img src="https://img.shields.io/badge/-International%20Operations-2D3748?style=flat-square&logo=globe&logoColor=white" alt="International">
-                            Spearheaded development projects for SBI's international operations spanning 20+ countries
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Stakeholder%20Management-2D3748?style=flat-square&logo=users&logoColor=white" alt="Stakeholder">
-                            Managed IT deliverables for internal stakeholders across 15+ countries
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Banking%20Systems-2D3748?style=flat-square&logo=bank&logoColor=white" alt="Banking">
-                            Implemented solutions for Core Banking, Trade Finance, and SWIFT payment systems
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-MIS%20Reporting-2D3748?style=flat-square&logo=chart-bar&logoColor=white" alt="MIS">
-                            Developed comprehensive MIS reporting solutions using Jasper Reports and Finacle MRT
-                        </li>
+                        <li>Spearheaded development projects for SBI's international operations spanning 20+ countries</li>
+                        <li>Managed IT deliverables for internal stakeholders across 15+ countries</li>
+                        <li>Implemented solutions for Core Banking, Trade Finance, and SWIFT payment systems</li>
+                        <li>Developed comprehensive MIS reporting solutions using Jasper Reports and Finacle MRT</li>
                     </ul>
                     
                     <div class="tech-stack">
@@ -98,18 +71,9 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Backend%20Development-2D3748?style=flat-square&logo=server&logoColor=white" alt="Backend">
-                            Developed backend services for data ingestion and transformation
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Financial%20Reporting-2D3748?style=flat-square&logo=chart-line&logoColor=white" alt="Financial">
-                            Created complex financial reporting solutions using Jasper Reports
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Team%20Collaboration-2D3748?style=flat-square&logo=users&logoColor=white" alt="Collaboration">
-                            Collaborated with Barclays and Capgemini teams for requirement analysis
-                        </li>
+                        <li>Developed backend services for data ingestion and transformation</li>
+                        <li>Created complex financial reporting solutions using Jasper Reports</li>
+                        <li>Collaborated with Barclays and Capgemini teams for requirement analysis</li>
                     </ul>
                     
                     <div class="tech-stack">
@@ -130,22 +94,10 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>
-                            <img src="https://img.shields.io/badge/-EDI%20Integration-2D3748?style=flat-square&logo=exchange-alt&logoColor=white" alt="EDI">
-                            Optimized Amazon-SKB Europe EDI connection for order processing
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-E-Invoicing-2D3748?style=flat-square&logo=file-invoice&logoColor=white" alt="E-Invoicing">
-                            Developed e-Invoicing solution for ASML via Ariba Network
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Vendor%20Rating-2D3748?style=flat-square&logo=star&logoColor=white" alt="Vendor">
-                            Created vendor rating system with ERP integration
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Inventory%20Management-2D3748?style=flat-square&logo=boxes&logoColor=white" alt="Inventory">
-                            Implemented factory floor inventory management system
-                        </li>
+                        <li>Optimized Amazon-SKB Europe EDI connection for order processing</li>
+                        <li>Developed e-Invoicing solution for ASML via Ariba Network</li>
+                        <li>Created vendor rating system with ERP integration</li>
+                        <li>Implemented factory floor inventory management system</li>
                     </ul>
                     
                     <div class="tech-stack">
@@ -168,18 +120,9 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Web%20Development-2D3748?style=flat-square&logo=code&logoColor=white" alt="Web">
-                            Built responsive web interfaces using modern technologies
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Database%20Design-2D3748?style=flat-square&logo=database&logoColor=white" alt="Database">
-                            Implemented database solutions for web applications
-                        </li>
-                        <li>
-                            <img src="https://img.shields.io/badge/-Core%20Java-2D3748?style=flat-square&logo=java&logoColor=white" alt="Core Java">
-                            Mastered core Java concepts through hands-on projects
-                        </li>
+                        <li>Built responsive web interfaces using modern technologies</li>
+                        <li>Implemented database solutions for web applications</li>
+                        <li>Mastered core Java concepts through hands-on projects</li>
                     </ul>
                     
                     <div class="tech-stack">
