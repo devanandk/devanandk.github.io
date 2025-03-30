@@ -18,22 +18,22 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>Architected and led development of cloud-native LLMS solution deployed on Podman containers</li>
-                        <li>Designed innovative report generation engine supporting multiple formats (PDF, Excel, Word, HTML, CSV) with AES-256 encryption</li>
-                        <li>Implemented Java-based aggregation system across 100+ core banking servers</li>
-                        <li>Orchestrated annual closing exercises for core banking systems across multiple countries</li>
-                        <li>Managed regulatory compliance activities including VA/PT observations and security audits</li>
+                        <li><span>Architected and led development of cloud-native LLMS solution deployed on Podman containers</span></li>
+                        <li><span>Designed innovative report generation engine supporting multiple formats (PDF, Excel, Word, HTML, CSV) with AES-256 encryption</span></li>
+                        <li><span>Implemented Java-based aggregation system across 100+ core banking servers</span></li>
+                        <li><span>Orchestrated annual closing exercises for core banking systems across multiple countries</span></li>
+                        <li><span>Managed regulatory compliance activities including VA/PT observations and security audits</span></li>
                     </ul>
                     
                     <div class="tech-stack">
-                        <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java">
-                        <img src="https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Boot">
-                        <img src="https://img.shields.io/badge/-Podman-892CA0?style=flat-square&logo=podman&logoColor=white" alt="Podman">
-                        <img src="https://img.shields.io/badge/-Oracle-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle">
-                        <img src="https://img.shields.io/badge/-PL%2FSQL-F80000?style=flat-square&logo=oracle&logoColor=white" alt="PL/SQL">
-                        <img src="https://img.shields.io/badge/-Apache%20Airflow-017CEE?style=flat-square&logo=apache-airflow&logoColor=white" alt="Apache Airflow">
-                        <img src="https://img.shields.io/badge/-Apache%20Superset-00D1B2?style=flat-square&logo=apache&logoColor=white" alt="Apache Superset">
-                        <img src="https://img.shields.io/badge/-REST%20APIs-2D3748?style=flat-square&logo=api&logoColor=white" alt="REST APIs">
+                        <span class="badge"><i class="fab fa-java"></i> Java</span>
+                        <span class="badge"><i class="fab fa-spring"></i> Spring Boot</span>
+                        <span class="badge"><i class="fas fa-box"></i> Podman</span>
+                        <span class="badge"><i class="fab fa-oracle"></i> Oracle</span>
+                        <span class="badge"><i class="fas fa-database"></i> PL/SQL</span>
+                        <span class="badge"><i class="fas fa-wind"></i> Apache Airflow</span>
+                        <span class="badge"><i class="fas fa-chart-line"></i> Apache Superset</span>
+                        <span class="badge"><i class="fas fa-plug"></i> REST APIs</span>
                     </div>
                 </div>
             </div>
@@ -46,18 +46,18 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>Spearheaded development projects for SBI's international operations spanning 20+ countries</li>
-                        <li>Managed IT deliverables for internal stakeholders across 15+ countries</li>
-                        <li>Implemented solutions for Core Banking, Trade Finance, and SWIFT payment systems</li>
-                        <li>Developed comprehensive MIS reporting solutions using Jasper Reports and Finacle MRT</li>
+                        <li><span>Spearheaded development projects for SBI's international operations spanning 20+ countries</span></li>
+                        <li><span>Managed IT deliverables for internal stakeholders across 15+ countries</span></li>
+                        <li><span>Implemented solutions for Core Banking, Trade Finance, and SWIFT payment systems</span></li>
+                        <li><span>Developed comprehensive MIS reporting solutions using Jasper Reports and Finacle MRT</span></li>
                     </ul>
                     
                     <div class="tech-stack">
-                        <img src="https://img.shields.io/badge/-Finacle-2D3748?style=flat-square&logo=bank&logoColor=white" alt="Finacle">
-                        <img src="https://img.shields.io/badge/-SWIFT%20Alliance-2D3748?style=flat-square&logo=bank&logoColor=white" alt="SWIFT">
-                        <img src="https://img.shields.io/badge/-Oracle-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle">
-                        <img src="https://img.shields.io/badge/-Jasper%20Reports-007396?style=flat-square" alt="Jasper Reports">
-                        <img src="https://img.shields.io/badge/-REST%20APIs-2D3748?style=flat-square&logo=api&logoColor=white" alt="REST APIs">
+                        <span class="badge"><i class="fas fa-university"></i> Finacle</span>
+                        <span class="badge"><i class="fas fa-exchange-alt"></i> SWIFT Alliance</span>
+                        <span class="badge"><i class="fab fa-oracle"></i> Oracle</span>
+                        <span class="badge"><i class="fas fa-file-alt"></i> Jasper Reports</span>
+                        <span class="badge"><i class="fas fa-plug"></i> REST APIs</span>
                     </div>
                 </div>
             </div>
@@ -70,17 +70,17 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>Developed backend services for data ingestion and transformation</li>
-                        <li>Created complex financial reporting solutions using Jasper Reports</li>
-                        <li>Collaborated with Barclays and Capgemini teams for requirement analysis</li>
+                        <li><span>Developed backend services for data ingestion and transformation</span></li>
+                        <li><span>Created complex financial reporting solutions using Jasper Reports</span></li>
+                        <li><span>Collaborated with Barclays and Capgemini teams for requirement analysis</span></li>
                     </ul>
                     
                     <div class="tech-stack">
-                        <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java">
-                        <img src="https://img.shields.io/badge/-Spring%20Framework-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring">
-                        <img src="https://img.shields.io/badge/-Oracle-F80000?style=flat-square&logo=oracle&logoColor=white" alt="Oracle">
-                        <img src="https://img.shields.io/badge/-Jasper%20Reports-007396?style=flat-square" alt="Jasper Reports">
-                        <img src="https://img.shields.io/badge/-JRXML-2D3748?style=flat-square" alt="JRXML">
+                        <span class="badge"><i class="fab fa-java"></i> Java</span>
+                        <span class="badge"><i class="fab fa-spring"></i> Spring Framework</span>
+                        <span class="badge"><i class="fab fa-oracle"></i> Oracle</span>
+                        <span class="badge"><i class="fas fa-file-alt"></i> Jasper Reports</span>
+                        <span class="badge"><i class="fas fa-code"></i> JRXML</span>
                     </div>
                 </div>
             </div>
@@ -93,20 +93,20 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>Optimized Amazon-SKB Europe EDI connection for order processing</li>
-                        <li>Developed e-Invoicing solution for ASML via Ariba Network</li>
-                        <li>Created vendor rating system with ERP integration</li>
-                        <li>Implemented factory floor inventory management system</li>
+                        <li><span>Optimized Amazon-SKB Europe EDI connection for order processing</span></li>
+                        <li><span>Developed e-Invoicing solution for ASML via Ariba Network</span></li>
+                        <li><span>Created vendor rating system with ERP integration</span></li>
+                        <li><span>Implemented factory floor inventory management system</span></li>
                     </ul>
                     
                     <div class="tech-stack">
-                        <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java">
-                        <img src="https://img.shields.io/badge/-UltraESB-2D3748?style=flat-square" alt="UltraESB">
-                        <img src="https://img.shields.io/badge/-Perl-39457E?style=flat-square&logo=perl&logoColor=white" alt="Perl">
-                        <img src="https://img.shields.io/badge/-EDI-2D3748?style=flat-square&logo=exchange-alt&logoColor=white" alt="EDI">
-                        <img src="https://img.shields.io/badge/-cXML-2D3748?style=flat-square" alt="cXML">
-                        <img src="https://img.shields.io/badge/-ISAH%20ERP-2D3748?style=flat-square" alt="ISAH ERP">
-                        <img src="https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">
+                        <span class="badge"><i class="fab fa-java"></i> Java</span>
+                        <span class="badge"><i class="fas fa-exchange-alt"></i> UltraESB</span>
+                        <span class="badge"><i class="fab fa-perl"></i> Perl</span>
+                        <span class="badge"><i class="fas fa-exchange-alt"></i> EDI</span>
+                        <span class="badge"><i class="fas fa-code"></i> cXML</span>
+                        <span class="badge"><i class="fas fa-boxes"></i> ISAH ERP</span>
+                        <span class="badge"><i class="fab fa-mysql"></i> MySQL</span>
                     </div>
                 </div>
             </div>
@@ -119,19 +119,19 @@ title: Experience
                     
                     <h3>Key Achievements:</h3>
                     <ul>
-                        <li>Built responsive web interfaces using modern technologies</li>
-                        <li>Implemented database solutions for web applications</li>
-                        <li>Mastered core Java concepts through hands-on projects</li>
+                        <li><span>Built responsive web interfaces using modern technologies</span></li>
+                        <li><span>Implemented database solutions for web applications</span></li>
+                        <li><span>Mastered core Java concepts through hands-on projects</span></li>
                     </ul>
                     
                     <div class="tech-stack">
-                        <img src="https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white" alt="Java">
-                        <img src="https://img.shields.io/badge/-Spring%20Framework-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring">
-                        <img src="https://img.shields.io/badge/-Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" alt="Hibernate">
-                        <img src="https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">
-                        <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML">
-                        <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS">
-                        <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
+                        <span class="badge"><i class="fab fa-java"></i> Java</span>
+                        <span class="badge"><i class="fab fa-spring"></i> Spring Framework</span>
+                        <span class="badge"><i class="fas fa-database"></i> Hibernate</span>
+                        <span class="badge"><i class="fab fa-mysql"></i> MySQL</span>
+                        <span class="badge"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
                     </div>
                 </div>
             </div>
@@ -217,25 +217,58 @@ title: Experience
     margin-bottom: 1rem;
     line-height: 1.5;
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
 }
 
-.timeline-item .card li img {
-    height: 20px;
-    margin: 0;
+.timeline-item .card li::before {
+    content: "•";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.timeline-item .card li span {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .tech-stack {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.tech-stack img {
-    height: 20px;
-    margin: 0;
+.tech-stack .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background: var(--light-gray);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+.tech-stack .badge:hover {
+    background: var(--secondary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.tech-stack .badge i {
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+}
+
+.tech-stack .badge:hover i {
+    color: white;
 }
 
 @media (max-width: 768px) {
