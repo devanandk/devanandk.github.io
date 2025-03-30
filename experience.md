@@ -157,17 +157,31 @@ title: Experience
     background-color: var(--secondary-color);
 }
 
-/* Add vertical timeline line connecting the date boxes */
+/* Modified vertical timeline line */
 .timeline::after {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 60px;
     width: 2px;
-    height: 100%;
+    height: calc(100% - 70px); /* Stop before reaching the top date box */
     background-image: linear-gradient(to bottom, var(--secondary-color) 50%, transparent 50%);
     background-size: 2px 16px;
     z-index: 0;
+}
+
+/* Add filled circle at the bottom */
+.timeline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    transform: translateX(-5px);
+    z-index: 1;
 }
 
 .timeline-item {
@@ -310,6 +324,11 @@ title: Experience
     
     /* Adjust vertical line for mobile */
     .timeline::after {
+        left: 30px;
+    }
+    
+    /* Adjust bottom circle for mobile */
+    .timeline::before {
         left: 30px;
     }
     
