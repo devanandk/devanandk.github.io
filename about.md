@@ -59,7 +59,8 @@ title: About
                             <i class="fas fa-graduation-cap"></i>
                             <div class="cert-content">
                                 <h3>Education</h3>
-                                <p>Bachelor of Engineering, Computer Science</p>
+                                <p>Bachelor of Engineering</p>
+                                <p>Computer Science</p>
                                 <p class="cert-meta">Anna University, Chennai</p>
                             </div>
                         </div>
@@ -68,9 +69,9 @@ title: About
                             <div class="cert-content">
                                 <h3>Technical Certifications</h3>
                                 <div class="cert-badges">
-                                    <img src="https://img.shields.io/badge/-Oracle%20Certified%20Professional-007396?style=flat-square&logo=oracle&logoColor=white" alt="Oracle Certified Professional">
-                                    <img src="https://img.shields.io/badge/-RedHat%20System%20Admin-EE0000?style=flat-square&logo=redhat&logoColor=white" alt="RedHat System Admin">
-                                    <img src="https://img.shields.io/badge/-Google%20Data%20Analytics-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google Data Analytics">
+                                    <img src="https://img.shields.io/badge/-Oracle%20Certified%20Professional%2C%20Java%20SE6%20Programmer-007396?style=flat-square&logo=java&logoColor=white" alt="Oracle Certified Professional, Java SE6 Programmer">
+                                    <img src="https://img.shields.io/badge/-RedHat%20System%20Administrator-EE0000?style=flat-square&logo=redhat&logoColor=white" alt="RedHat System Administrator">
+                                    <img src="https://img.shields.io/badge/-Google%20Data%20Analytics%20Professional-4285F4?style=flat-square&logo=google&logoColor=white" alt="Google Data Analytics Professional">
                                 </div>
                             </div>
                         </div>
@@ -80,7 +81,7 @@ title: About
                                 <h3>AI & Development</h3>
                                 <div class="cert-badges">
                                     <img src="https://img.shields.io/badge/-ChatGPT%20Prompt%20Engineering-2D3748?style=flat-square&logo=openai&logoColor=white" alt="ChatGPT Prompt Engineering">
-                                    <img src="https://img.shields.io/badge/-LLM%20Pair%20Programming-2D3748?style=flat-square&logo=robot&logoColor=white" alt="LLM Pair Programming">
+                                    <img src="https://img.shields.io/badge/-LLM%20Pair%20Programming-2D3748?style=flat-square&logo=openai&logoColor=white" alt="LLM Pair Programming">
                                 </div>
                             </div>
                         </div>
@@ -91,27 +92,39 @@ title: About
                     <h2 class="section-subtitle">Languages</h2>
                     <div class="language-grid">
                         <div class="language-item">
-                            <div class="language-badges">
-                                <img src="https://img.shields.io/badge/-English-2D3748?style=flat-square&logo=language&logoColor=white" alt="English">
-                                <img src="https://img.shields.io/badge/-Full%20Professional-2D3748?style=flat-square" alt="Full Professional">
+                            <div class="language-header">
+                                <i class="fas fa-globe"></i>
+                                <h3>English</h3>
+                            </div>
+                            <div class="proficiency-badge">
+                                <img src="https://img.shields.io/badge/-Full%20Professional%20Proficiency-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Full Professional Proficiency">
                             </div>
                         </div>
                         <div class="language-item">
-                            <div class="language-badges">
-                                <img src="https://img.shields.io/badge/-Hindi-2D3748?style=flat-square&logo=language&logoColor=white" alt="Hindi">
-                                <img src="https://img.shields.io/badge/-Full%20Professional-2D3748?style=flat-square" alt="Full Professional">
+                            <div class="language-header">
+                                <i class="fas fa-globe"></i>
+                                <h3>Hindi</h3>
+                            </div>
+                            <div class="proficiency-badge">
+                                <img src="https://img.shields.io/badge/-Full%20Professional%20Proficiency-2D3748?style=flat-square&logo=check-circle&logoColor=white" alt="Full Professional Proficiency">
                             </div>
                         </div>
                         <div class="language-item">
-                            <div class="language-badges">
-                                <img src="https://img.shields.io/badge/-Malayalam-2D3748?style=flat-square&logo=language&logoColor=white" alt="Malayalam">
-                                <img src="https://img.shields.io/badge/-Native-2D3748?style=flat-square" alt="Native">
+                            <div class="language-header">
+                                <i class="fas fa-globe"></i>
+                                <h3>Malayalam</h3>
+                            </div>
+                            <div class="proficiency-badge">
+                                <img src="https://img.shields.io/badge/-Native%20Speaker-2D3748?style=flat-square&logo=star&logoColor=white" alt="Native Speaker">
                             </div>
                         </div>
                         <div class="language-item">
-                            <div class="language-badges">
-                                <img src="https://img.shields.io/badge/-Tamil-2D3748?style=flat-square&logo=language&logoColor=white" alt="Tamil">
-                                <img src="https://img.shields.io/badge/-Working-2D3748?style=flat-square" alt="Working">
+                            <div class="language-header">
+                                <i class="fas fa-globe"></i>
+                                <h3>Tamil</h3>
+                            </div>
+                            <div class="proficiency-badge">
+                                <img src="https://img.shields.io/badge/-Working%20Knowledge-2D3748?style=flat-square&logo=book&logoColor=white" alt="Working Knowledge">
                             </div>
                         </div>
                     </div>
@@ -285,26 +298,47 @@ title: About
 .language-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 1.5rem;
 }
 
 .language-item {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem;
+    gap: 0.75rem;
+    padding: 1.25rem;
     background: var(--light-gray);
     border-radius: 8px;
+    transition: transform 0.2s ease;
 }
 
-.language-badges {
+.language-item:hover {
+    transform: translateY(-2px);
+}
+
+.language-header {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0.75rem;
 }
 
-.language-badges img {
+.language-header i {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+}
+
+.language-header h3 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.proficiency-badge {
+    display: flex;
+    justify-content: center;
+}
+
+.proficiency-badge img {
     height: 20px;
     margin: 0;
 }
