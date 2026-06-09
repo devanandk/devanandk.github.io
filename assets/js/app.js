@@ -284,7 +284,8 @@
     $$("[data-open-terminal]").forEach((b) => b.addEventListener("click", open));
     $("#term-close").addEventListener("click", close);
     document.addEventListener("keydown", (e) => {
-      if (e.key === "`" && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); open(); }
+      const active = document.activeElement;
+      if (e.key === "`" && !(active && /INPUT|TEXTAREA/.test(active.tagName))) { e.preventDefault(); open(); }
       if (e.key === "Escape" && overlay.classList.contains("open")) close();
     });
     overlay.addEventListener("click", (e) => { if (e.target === overlay) close(); });
@@ -350,6 +351,17 @@
   /* ---------------- misc UI ---------------- */
   function initUI() {
     $("#theme-toggle").addEventListener("click", G.toggleTheme);
+
+    // "Press start" begins the quest
+    const pressStart = $("#press-start");
+    if (pressStart) pressStart.addEventListener("click", () => {
+      $("#about").scrollIntoView({ behavior: "smooth" });
+    });
+
+    // keyboard hint is useless on touch devices — point at the HUD button instead
+    const isTouch = window.matchMedia && window.matchMedia("(hover: none)").matches;
+    const hint = $("#hero-hint");
+    if (isTouch && hint) hint.innerHTML = "Hint: tap the ⌨️ icon up top for the terminal · secrets await";
     $("#reset-progress").addEventListener("click", () => {
       if (confirm("Start a new game? This resets your XP and achievements.")) G.reset();
     });
@@ -374,18 +386,29 @@
   }
 
   /* ---------------- boot ---------------- */
-  document.addEventListener("DOMContentLoaded", () => {
-    G.init();
-    initHero();
-    renderAbout();
-    renderStats();
-    renderSkills();
-    renderQuests();
-    renderProjects("all");
-    initProjectFilters();
-    initSections();
-    initContact();
-    initTerminal();
-    initUI();
-  });
+  /* Each step runs independently so one failure can't take down the whole page. */
+  function safe(fn) {
+    try { fn(); } catch (e) { console.error("init step failed:", e); }
+  }
+
+  function boot() {
+    safe(() => G.init());
+    safe(initHero);
+    safe(renderAbout);
+    safe(renderStats);
+    safe(renderSkills);
+    safe(renderQuests);
+    safe(() => renderProjects("all"));
+    safe(initProjectFilters);
+    safe(initSections);
+    safe(initContact);
+    safe(initTerminal);
+    safe(initUI);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
 })();

@@ -66,6 +66,7 @@
           <span class="xp-label" id="xp-label">0 XP</span>
         </div>
         <a class="hud-ach" href="#achievements" title="Achievements">🏆 <span id="hud-achievements">0/0</span></a>
+        <button class="icon-btn" data-open-terminal aria-label="Open terminal" title="Open terminal">⌨️</button>
         <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
           <span class="theme-icon-dark">☀️</span><span class="theme-icon-light">🌙</span>
         </button>
@@ -79,7 +80,7 @@
     <section class="hero" aria-label="Introduction">
       <div class="container hero-inner">
         <div>
-          <p class="press-start">▶ Press start to explore</p>
+          <button class="press-start" id="press-start">▶ Press start to explore</button>
           <h1>Devanand K</h1>
           <p class="hero-role"><span id="typed-role"></span><span class="cursor">▍</span></p>
           <p class="hero-pitch">
@@ -92,7 +93,7 @@
             <a href="#about" class="btn btn-primary">⚔️ Begin Quest</a>
             <a href="#contact" class="btn btn-ghost">📨 Skip to Contact</a>
           </div>
-          <p class="hero-hint">Hint: press <kbd>`</kbd> for the terminal · old-school cheat codes work here</p>
+          <p class="hero-hint" id="hero-hint">Hint: press <kbd>`</kbd> for the terminal · old-school cheat codes work here</p>
         </div>
 
         <aside class="player-card" aria-label="Character sheet">
@@ -252,6 +253,6 @@
 
   <script src="assets/js/data.js"></script>
   <script src="assets/js/game.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -94,7 +94,9 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .hud {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   height: var(--header-h);
+  background: var(--bg); /* fallback for browsers without color-mix */
   background: color-mix(in srgb, var(--bg) 82%, transparent);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -179,7 +181,9 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   .xp-label { display: none; }
 }
 @media (max-width: 560px) {
-  .hud-ach { display: none; }
+  .hud-ach, .hud-level { display: none; }
+  .hud-inner { gap: 10px; }
+  .hud-stats { gap: 8px; }
 }
 
 /* ---------- hero ---------- */
@@ -193,9 +197,13 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .hero-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: center; }
 
 .press-start {
+  display: inline-block; padding: 0;
   font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.22em;
   text-transform: uppercase; color: var(--accent);
   animation: blink 1.6s step-end infinite;
+}
+.press-start:hover, .press-start:focus-visible {
+  animation: none; text-decoration: underline; text-underline-offset: 4px;
 }
 @keyframes blink { 50% { opacity: 0.25; } }
 
@@ -534,7 +542,8 @@ section:nth-of-type(even) { background: var(--bg-soft); }
 /* ---------- terminal ---------- */
 .terminal-overlay {
   position: fixed; inset: 0; z-index: 200; display: none;
-  background: rgba(2, 6, 16, 0.7); backdrop-filter: blur(4px);
+  background: rgba(2, 6, 16, 0.7);
+  -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
   align-items: center; justify-content: center; padding: 20px;
 }
 .terminal-overlay.open { display: flex; }
