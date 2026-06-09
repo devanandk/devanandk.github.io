@@ -32,11 +32,11 @@ DK.profile = {
     { name: "Sanskrit", level: "Elementary", pct: 30 },
   ],
   certifications: [
-    "Oracle Certified Professional, Java SE6 Programmer (OCJP)",
+    "Oracle Certified Professional, Java SE Programmer (OCJP)",
+    "Google Data Analytics Professional Certificate",
     "Introduction to Blockchain for Financial Services",
     "Pair Programming with a Large Language Model",
     "Introduction to Generative AI",
-    "Foundations: Data, Data, Everywhere",
   ],
   hobbies: [
     { icon: "📚", name: "Sci-Fi & Fantasy", desc: "Avid reader — usually lost in a Kindle or an audiobook" },
