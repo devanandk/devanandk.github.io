@@ -116,6 +116,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .nav-links a {
   display: block; padding: 6px 12px; border-radius: var(--radius-sm);
   color: var(--text-muted); font-size: 0.9rem; font-weight: 500;
+  white-space: nowrap;
 }
 .nav-links a:hover { color: var(--text); text-decoration: none; background: var(--panel); }
 .nav-links a.active { color: var(--accent); background: var(--panel); }
@@ -165,7 +166,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 
 #nav-burger { display: none; }
 
-@media (max-width: 880px) {
+@media (max-width: 1100px) {
   #nav-burger { display: grid; }
   .nav-links {
     position: fixed; top: var(--header-h); left: 0; right: 0;
