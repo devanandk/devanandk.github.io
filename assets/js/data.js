@@ -375,6 +375,63 @@ DK.projects = [
   },
 ];
 
+/* Boss fight — question pool. The dragon has 5 HP; the player has 3 hearts. */
+DK.bossFight = [
+  {
+    q: "Which institution does Devanand currently quest for?",
+    options: ["State Bank of India", "Barclays Bank UK", "Zafin", "Amazon"],
+    answer: 0,
+    lore: "9+ years at SBI's Global IT Centre, powering international operations.",
+  },
+  {
+    q: "His Java aggregation agent runs across how many core banking servers?",
+    options: ["12", "50+", "120+", "1000+"],
+    answer: 2,
+    lore: "120+ servers feeding centralized report distribution for Foreign Offices.",
+  },
+  {
+    q: "In this portfolio, what does LLMS stand for?",
+    options: [
+      "Large Language Model System",
+      "Loan Lifecycle Management System",
+      "Low Latency Messaging Service",
+      "Ledger Lifecycle Migration Suite",
+    ],
+    answer: 1,
+    lore: "Nice try, AI fans — it's the bank's fully in-house Loan Lifecycle Management System.",
+  },
+  {
+    q: "How many reports does his in-house engine generate and distribute daily?",
+    options: ["70+", "200+", "700+", "7000+"],
+    answer: 2,
+    lore: "700+ daily reports, replicated in real time with Oracle GoldenGate.",
+  },
+  {
+    q: "Which aircraft does he 'fly' off duty?",
+    options: ["Boeing 747", "Cessna 172", "F-16", "Airbus A320"],
+    answer: 3,
+    lore: "An A320 — strictly in Microsoft Flight Simulator. Gear up, flaps 1.",
+  },
+  {
+    q: "Which certification did he earn independently as a trainee?",
+    options: ["OCJP (Java)", "AWS Solutions Architect", "CISSP", "PMP"],
+    answer: 0,
+    lore: "Oracle Certified Professional Java Programmer — the tutorial-level loot.",
+  },
+  {
+    q: "SBI's international network he supports spans how many countries?",
+    options: ["5+", "10+", "20+", "50+"],
+    answer: 2,
+    lore: "20+ countries, each with its own regulatory final boss.",
+  },
+  {
+    q: "Which of these is NOT in his toolbox?",
+    options: ["Jasper Reports", "COBOL", "Apache Airflow", "Kubernetes"],
+    answer: 1,
+    lore: "Core banking, yes — COBOL, no. The stack is Java, Spring Boot and friends.",
+  },
+];
+
 /* Achievements — id, icon, name, how to unlock, xp reward, secret flag */
 DK.achievements = [
   { id: "new-game", icon: "🎮", name: "New Game", desc: "Started the experience", xp: 10 },
@@ -386,6 +443,7 @@ DK.achievements = [
   { id: "headhunter", icon: "🤝", name: "Headhunter", desc: "Reached out via contact links", xp: 30 },
   { id: "shapeshifter", icon: "🌓", name: "Shapeshifter", desc: "Switched the light/dark theme", xp: 15 },
   { id: "completionist", icon: "🏆", name: "Completionist", desc: "Visited every section of the site", xp: 60 },
+  { id: "boss-slain", icon: "🐉", name: "Boss Slain", desc: "Defeated the Interview Dragon in the boss fight", xp: 60 },
   { id: "hacker", icon: "💻", name: "Terminal Velocity", desc: "Opened the hidden terminal", xp: 40, secret: true },
   { id: "konami", icon: "🕹️", name: "30 Lives", desc: "Entered the Konami code", xp: 50, secret: true },
   { id: "pilot", icon: "✈️", name: "Cleared for Takeoff", desc: "Found the flight simulator easter egg", xp: 25, secret: true },

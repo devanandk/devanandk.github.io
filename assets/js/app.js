@@ -75,15 +75,26 @@
         <span class="stat-label">${s.label}</span></div>`
     ).join("");
 
+    // once printing is requested, counters must show final values and stay there
+    let pinned = false;
+    const pin = () => {
+      pinned = true;
+      $$(".stat-value").forEach((el) => {
+        el.textContent = el.dataset.target + (el.dataset.suffix || "");
+      });
+    };
+    window.addEventListener("beforeprint", pin);
+
     const animate = (el) => {
       const target = +el.dataset.target;
       const suffix = el.dataset.suffix || "";
-      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      if (pinned || (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches)) {
         el.textContent = target + suffix;
         return;
       }
       const dur = 1400, t0 = performance.now();
       (function step(t) {
+        if (pinned) { el.textContent = target + suffix; return; }
         const k = Math.min(1, (t - t0) / dur);
         el.textContent = Math.round(target * (1 - Math.pow(1 - k, 3))) + (k === 1 ? suffix : "");
         if (k < 1) requestAnimationFrame(step);
@@ -221,8 +232,134 @@
     });
   }
 
+  /* ---------------- boss fight ---------------- */
+  function renderBoss() {
+    const arena = $("#boss-arena");
+    if (!arena) return;
+    const BOSS_HP = 5, PLAYER_HEARTS = 3;
+    let pool, qIdx, hp, hearts, locked;
+
+    const hpBar = () =>
+      `<div class="boss-status">
+        <div class="boss-hp" aria-label="Boss HP">
+          <span class="boss-hp-label">🐉 Interview Dragon</span>
+          ${Array.from({ length: BOSS_HP }, (_, i) =>
+            `<span class="hp-seg ${i < hp ? "full" : "empty"}"></span>`).join("")}
+        </div>
+        <div class="boss-hearts" aria-label="Your lives">
+          <span class="boss-hp-label">You</span>
+          ${Array.from({ length: PLAYER_HEARTS }, (_, i) =>
+            `<span class="heart">${i < hearts ? "❤️" : "🖤"}</span>`).join("")}
+        </div>
+      </div>`;
+
+    const intro = () => {
+      const slain = G.isUnlocked("boss-slain");
+      arena.innerHTML =
+        `<div class="boss-card boss-intro">
+          <div class="boss-emoji">🐉</div>
+          <h3>${slain ? "The Interview Dragon (slain)" : "The Interview Dragon"}</h3>
+          <p>${slain
+            ? "You've already bested it — but dragons respawn. Fancy a rematch for glory?"
+            : "It guards the final offer letter. Land 5 hits by answering questions about my career — everything you need is somewhere on this page."}</p>
+          <button class="btn btn-primary" id="boss-start">⚔️ ${slain ? "Rematch" : "Challenge the Boss"}</button>
+        </div>`;
+      $("#boss-start").addEventListener("click", start);
+    };
+
+    const start = () => {
+      pool = DK.bossFight.map((q, i) => ({ ...q, id: i })).sort(() => Math.random() - 0.5);
+      qIdx = 0; hp = BOSS_HP; hearts = PLAYER_HEARTS;
+      question();
+    };
+
+    const question = () => {
+      locked = false;
+      const q = pool[qIdx];
+      arena.innerHTML =
+        `<div class="boss-card">
+          ${hpBar()}
+          <p class="boss-q">${q.q}</p>
+          <div class="boss-options">
+            ${q.options.map((o, i) => `<button class="boss-opt" data-i="${i}">${o}</button>`).join("")}
+          </div>
+          <div class="boss-feedback" id="boss-feedback"></div>
+        </div>`;
+      $$(".boss-opt", arena).forEach((btn) => btn.addEventListener("click", () => answer(+btn.dataset.i)));
+    };
+
+    const answer = (i) => {
+      if (locked) return;
+      locked = true;
+      const q = pool[qIdx];
+      const correct = i === q.answer;
+      $$(".boss-opt", arena).forEach((btn, bi) => {
+        btn.disabled = true;
+        if (bi === q.answer) btn.classList.add("correct");
+        else if (bi === i) btn.classList.add("wrong");
+      });
+      if (correct) {
+        hp--;
+        G.once(`bossxp:${q.id}`, () => G.addXP(4));
+      } else {
+        hearts--;
+      }
+      const fb = $("#boss-feedback");
+      fb.innerHTML =
+        `<p class="${correct ? "hit" : "miss"}">${correct ? "⚔️ Direct hit!" : "🔥 The dragon breathes fire!"} ${q.lore}</p>
+         <button class="btn btn-primary" id="boss-next">${hp === 0 || hearts === 0 ? "See the outcome" : "Next question ▸"}</button>`;
+      // refresh status bar
+      arena.querySelector(".boss-status").outerHTML = hpBar();
+      $("#boss-next").addEventListener("click", () => {
+        if (hp === 0) return win();
+        if (hearts === 0) return lose();
+        qIdx++;
+        question();
+      });
+    };
+
+    const win = () => {
+      arena.innerHTML =
+        `<div class="boss-card boss-intro">
+          <div class="boss-emoji">🏆</div>
+          <h3>Boss slain!</h3>
+          <p>The Interview Dragon crumbles. You clearly did your research — exactly the kind of candidate diligence I appreciate. The quest board below is open.</p>
+          <a class="btn btn-primary" href="#contact">📨 Claim your reward — get in touch</a>
+        </div>`;
+      G.unlock("boss-slain");
+      G.confetti();
+    };
+
+    const lose = () => {
+      arena.innerHTML =
+        `<div class="boss-card boss-intro">
+          <div class="boss-emoji">💀</div>
+          <h3>Defeated…</h3>
+          <p>The dragon's HR department will get back to you. (Hint: the answers are hiding in the Quest Log and Side Quests above.)</p>
+          <button class="btn btn-primary" id="boss-retry">↺ Try again</button>
+        </div>`;
+      $("#boss-retry").addEventListener("click", start);
+    };
+
+    intro();
+  }
+
+  /* ---------------- print / résumé export ---------------- */
+  function initPrint() {
+    const prepare = () => {
+      renderProjects("all"); // ensure no rarity filter hides projects in the printout
+    };
+    window.addEventListener("beforeprint", prepare);
+    const btn = $("#download-resume");
+    if (btn) btn.addEventListener("click", () => {
+      prepare();
+      G.unlock("headhunter");
+      window.print();
+    });
+  }
+
   /* ---------------- section tracking (scroll spy + XP) ---------------- */
-  const SECTION_IDS = ["about", "skills", "experience", "projects", "achievements", "contact"];
+  const SECTION_IDS = ["about", "skills", "experience", "projects", "boss", "achievements", "contact"];
 
   function initSections() {
     const io = new IntersectionObserver((entries) => {
@@ -298,6 +435,7 @@
          "  <b>quests</b>      career history", "  <b>projects</b>    notable side quests",
          "  <b>certs</b>       certifications", "  <b>langs</b>       spoken languages",
          "  <b>hobbies</b>     off-duty activities", "  <b>contact</b>     how to reach me",
+         "  <b>fight</b>       challenge the boss",
          "  <b>theme</b>       toggle light/dark", "  <b>achievements</b> progress report",
          "  <b>clear</b>       clear screen", "  <b>exit</b>        close terminal",
         ].join("<br>")),
@@ -317,6 +455,11 @@
       coffee: () => print("☕ Brewing… ERROR 418: I'm a teapot.", "muted"),
       fly: () => { G.unlock("pilot"); print("✈️ Spawning at runway 27R… gear up, flaps 1. Enjoy the A320!"); },
       konami: () => print("↑ ↑ ↓ ↓ ← → ← → B A — but you didn't hear it from me.", "muted"),
+      fight: () => {
+        close();
+        document.getElementById("boss").scrollIntoView({ behavior: "smooth" });
+        print("⚔️ Entering the arena…");
+      },
       ls: () => print("about/  skills/  experience/  projects/  achievements/  contact/"),
       cd: (arg) => {
         const target = (arg || "").replace(/\/$/, "");
@@ -400,6 +543,8 @@
     safe(renderQuests);
     safe(() => renderProjects("all"));
     safe(initProjectFilters);
+    safe(renderBoss);
+    safe(initPrint);
     safe(initSections);
     safe(initContact);
     safe(initTerminal);

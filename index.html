@@ -12,6 +12,13 @@
   <meta property="og:title" content="Devanand K — Career Quest">
   <meta property="og:description" content="An interactive, gamified portfolio. Explore 13+ years of banking technology, earn XP, and unlock achievements.">
   <meta property="og:url" content="https://devanandk.github.io">
+  <meta property="og:image" content="https://devanandk.github.io/assets/images/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Devanand K — Career Quest">
+  <meta name="twitter:description" content="An interactive, gamified portfolio. Explore 13+ years of banking technology, earn XP, and unlock achievements.">
+  <meta name="twitter:image" content="https://devanandk.github.io/assets/images/og-card.png">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
 
@@ -52,6 +59,7 @@
           <li><a href="#skills">Skill Tree</a></li>
           <li><a href="#experience">Quest Log</a></li>
           <li><a href="#projects">Side Quests</a></li>
+          <li><a href="#boss">Boss Fight</a></li>
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -83,6 +91,8 @@
           <button class="press-start" id="press-start">▶ Press start to explore</button>
           <h1>Devanand K</h1>
           <p class="hero-role"><span id="typed-role"></span><span class="cursor">▍</span></p>
+          <p class="print-only print-title">Banking Technologist · Enterprise Integration · Cloud-native Architect · AI Explorer</p>
+          <p class="print-only print-contact">devanand1234@gmail.com · linkedin.com/in/devanandkmenon · github.com/devanandk · Navi Mumbai, India</p>
           <p class="hero-pitch">
             13+ years crafting enterprise solutions — from full-stack applications to
             cloud-native systems powering international banking operations for India's
@@ -189,10 +199,20 @@
       </div>
     </section>
 
+    <!-- ===================== BOSS FIGHT ===================== -->
+    <section id="boss" aria-label="Boss fight quiz">
+      <div class="container">
+        <p class="section-kicker">Chapter 05 · Boss Fight</p>
+        <h2 class="section-title">The Final Interview</h2>
+        <p class="section-sub">Think you know me by now? The Interview Dragon has 5 HP — every correct answer lands a hit. Three wrong answers and your candidacy goes up in flames. Everything you need is on this page.</p>
+        <div class="boss-arena" id="boss-arena"></div>
+      </div>
+    </section>
+
     <!-- ===================== ACHIEVEMENTS ===================== -->
     <section id="achievements" aria-label="Achievements">
       <div class="container">
-        <p class="section-kicker">Chapter 05 · Trophy Room</p>
+        <p class="section-kicker">Chapter 06 · Trophy Room</p>
         <h2 class="section-title">Your Achievements</h2>
         <p class="achievements-summary" id="achievements-summary"></p>
         <div class="achievements-grid" id="achievements-grid"></div>
@@ -216,6 +236,7 @@
             <a class="btn btn-primary" data-contact href="mailto:devanand1234@gmail.com">📧 Send a Message</a>
             <a class="btn btn-ghost" data-contact href="https://www.linkedin.com/in/devanandkmenon" target="_blank" rel="noopener">💼 LinkedIn</a>
             <a class="btn btn-ghost" data-contact href="https://github.com/devanandk" target="_blank" rel="noopener">🐙 GitHub</a>
+            <button class="btn btn-ghost" id="download-resume">📜 Export Character Sheet (PDF)</button>
           </div>
         </div>
       </div>
