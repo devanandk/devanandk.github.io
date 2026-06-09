@@ -1,128 +1,257 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devanand K — Career Quest | Banking Technologist & Cloud-native Architect</title>
+  <meta name="description" content="Interactive portfolio of Devanand K — Banking Technologist, Enterprise Integration Specialist, Cloud-native Architect and AI Explorer with 13+ years of experience. Explore the quest log, level up, and unlock achievements.">
+  <meta name="author" content="Devanand K">
 
-<section class="hero">
-    <div class="hero-content">
-        <h1 class="hero-title">Devanand K</h1>
-        <div class="hero-subtitle-wrapper">
-            <p class="hero-subtitle">Architecting the Future of Banking Technology</p>
-            <div class="hero-tags">
-                <span class="hero-tag"><i class="fas fa-bank"></i> Enterprise Solutions</span>
-                <span class="hero-tag"><i class="fas fa-cloud"></i> Cloud Architecture</span>
-                <span class="hero-tag"><i class="fas fa-brain"></i> AI Innovation</span>
-            </div>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Devanand K — Career Quest">
+  <meta property="og:description" content="An interactive, gamified portfolio. Explore 13+ years of banking technology, earn XP, and unlock achievements.">
+  <meta property="og:url" content="https://devanandk.github.io">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Devanand K",
+    "jobTitle": "Deputy Manager (Systems), State Bank of India",
+    "description": "Banking Technologist | Enterprise Integration | Cloud-native Architect | AI Explorer",
+    "email": "mailto:devanand1234@gmail.com",
+    "url": "https://devanandk.github.io",
+    "sameAs": [
+      "https://www.linkedin.com/in/devanandkmenon",
+      "https://github.com/devanandk"
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Navi Mumbai", "addressCountry": "IN" },
+    "alumniOf": "Anna University, Chennai"
+  }
+  </script>
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ===================== HUD ===================== -->
+  <header class="hud">
+    <div class="hud-inner">
+      <a href="#top" class="hud-logo">dev<span class="accent">@</span>nand<span class="accent">:~$</span></a>
+
+      <nav aria-label="Main navigation" style="display: contents;">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">Profile</a></li>
+          <li><a href="#skills">Skill Tree</a></li>
+          <li><a href="#experience">Quest Log</a></li>
+          <li><a href="#projects">Side Quests</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hud-stats">
+        <span class="hud-level" id="hud-level">LV 1</span>
+        <div class="xp-wrap">
+          <div class="xp-bar" role="progressbar" aria-label="Exploration XP">
+            <div class="xp-fill" id="xp-fill"></div>
+          </div>
+          <span class="xp-label" id="xp-label">0 XP</span>
         </div>
-        <div class="hero-buttons">
-            <a href="/about" class="btn btn-primary">Learn More</a>
-            <a href="/contact" class="btn btn-outline">Contact Me</a>
-        </div>
+        <a class="hud-ach" href="#achievements" title="Achievements">🏆 <span id="hud-achievements">0/0</span></a>
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon-dark">☀️</span><span class="theme-icon-light">🌙</span>
+        </button>
+        <button class="icon-btn" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
     </div>
-</section>
+  </header>
 
-<section class="expertise-section">
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+        <div>
+          <p class="press-start">▶ Press start to explore</p>
+          <h1>Devanand K</h1>
+          <p class="hero-role"><span id="typed-role"></span><span class="cursor">▍</span></p>
+          <p class="hero-pitch">
+            13+ years crafting enterprise solutions — from full-stack applications to
+            cloud-native systems powering international banking operations for India's
+            largest bank. This portfolio is a game: explore, earn XP, and unlock
+            achievements while you get to know me.
+          </p>
+          <div class="hero-cta">
+            <a href="#about" class="btn btn-primary">⚔️ Begin Quest</a>
+            <a href="#contact" class="btn btn-ghost">📨 Skip to Contact</a>
+          </div>
+          <p class="hero-hint">Hint: press <kbd>`</kbd> for the terminal · old-school cheat codes work here</p>
+        </div>
+
+        <aside class="player-card" aria-label="Character sheet">
+          <h3>// Character Sheet</h3>
+          <div class="pc-row"><span class="k">Name</span><span class="v">Devanand K</span></div>
+          <div class="pc-row"><span class="k">Class</span><span class="v">Enterprise Architect</span></div>
+          <div class="pc-row"><span class="k">Level</span><span class="v"><span class="pc-level">13</span></span></div>
+          <div class="pc-row"><span class="k">Guild</span><span class="v">State Bank of India · GITC</span></div>
+          <div class="pc-row"><span class="k">Base</span><span class="v">Navi Mumbai, India</span></div>
+          <div class="pc-row"><span class="k">Main Weapons</span><span class="v">Java · Spring Boot · K8s</span></div>
+          <div class="pc-row"><span class="k">Special Ability</span><span class="v">700+ reports/day</span></div>
+          <div class="pc-row"><span class="k">Current Quest</span><span class="v">Cloud-native LLMS</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" aria-label="Character profile">
+      <div class="container">
+        <p class="section-kicker">Chapter 01 · Character Profile</p>
+        <h2 class="section-title">The Story So Far</h2>
+        <p class="section-sub">Every good game starts with lore. Here's mine.</p>
+
+        <div class="about-grid">
+          <div>
+            <p class="about-summary" id="about-summary"></p>
+            <div class="traits-grid" id="traits-grid"></div>
+          </div>
+          <div>
+            <div class="side-panel">
+              <h3>Language Proficiencies</h3>
+              <ul id="languages-list"></ul>
+            </div>
+            <div class="side-panel">
+              <h3>Badges &amp; Certifications</h3>
+              <ul id="certs-list"></ul>
+            </div>
+            <div class="side-panel">
+              <h3>Training Grounds</h3>
+              <ul id="education-list"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hobbies-grid" id="hobbies-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats-strip" aria-label="Career statistics">
+      <div class="container">
+        <div class="stats-grid" id="stats-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" aria-label="Skill tree">
+      <div class="container">
+        <p class="section-kicker">Chapter 02 · Skill Tree</p>
+        <h2 class="section-title">Abilities &amp; Specializations</h2>
+        <p class="section-sub">Six branches, levelled over 13 years. Click a branch to inspect its skills — exploring grants XP.</p>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" aria-label="Career history">
+      <div class="container">
+        <p class="section-kicker">Chapter 03 · Quest Log</p>
+        <h2 class="section-title">Campaign History</h2>
+        <p class="section-sub">The main storyline — from tutorial level to the current campaign. Open each chapter to read the full quest log.</p>
+        <div class="quest-log" id="quest-log"></div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" aria-label="Projects">
+      <div class="container">
+        <p class="section-kicker">Chapter 04 · Side Quests</p>
+        <h2 class="section-title">Notable Missions</h2>
+        <p class="section-sub">Rarity reflects scale and impact. Click any card to inspect mission details.</p>
+
+        <div class="project-filters" id="project-filters" role="group" aria-label="Filter projects by rarity">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="legendary">⭐ Legendary</button>
+          <button data-filter="epic">💜 Epic</button>
+          <button data-filter="rare">💙 Rare</button>
+          <button data-filter="common">🤍 Common</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid"></div>
+        <p class="projects-hint">Inspect 5 missions to earn the Mission Specialist achievement.</p>
+      </div>
+    </section>
+
+    <!-- ===================== ACHIEVEMENTS ===================== -->
+    <section id="achievements" aria-label="Achievements">
+      <div class="container">
+        <p class="section-kicker">Chapter 05 · Trophy Room</p>
+        <h2 class="section-title">Your Achievements</h2>
+        <p class="achievements-summary" id="achievements-summary"></p>
+        <div class="achievements-grid" id="achievements-grid"></div>
+        <div class="reset-row">
+          <button id="reset-progress">↺ New Game (reset progress)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="contact-card">
+          <p class="section-kicker">Final Chapter · Join My Party</p>
+          <h2>Let's Build Something Together</h2>
+          <p>
+            Interested in enterprise architecture, AI innovations, or just want to exchange
+            book recommendations? My inbox is an open quest board.
+          </p>
+          <div class="contact-links">
+            <a class="btn btn-primary" data-contact href="mailto:devanand1234@gmail.com">📧 Send a Message</a>
+            <a class="btn btn-ghost" data-contact href="https://www.linkedin.com/in/devanandkmenon" target="_blank" rel="noopener">💼 LinkedIn</a>
+            <a class="btn btn-ghost" data-contact href="https://github.com/devanandk" target="_blank" rel="noopener">🐙 GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== TERMINAL ===================== -->
+  <div class="terminal-overlay" id="terminal" aria-hidden="true" role="dialog" aria-label="Interactive terminal">
+    <div class="terminal">
+      <div class="term-bar">
+        <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
+        <span class="term-title">guest@devk — zsh</span>
+        <button id="term-close" aria-label="Close terminal">✕</button>
+      </div>
+      <div class="term-output" id="term-output"></div>
+      <div class="term-input-row">
+        <span class="term-prompt">guest@devk:~$</span>
+        <input id="term-input" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal command input">
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== TOASTS ===================== -->
+  <div class="toast-host" id="toast-host" aria-live="polite"></div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
     <div class="container">
-        <h2 class="section-title">Areas of Expertise</h2>
-        <div class="expertise-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-            <div class="expertise-card" style="width: 100%;">
-                <div class="expertise-icon">
-                    <i class="fas fa-cloud"></i>
-                </div>
-                <h3>Cloud Architecture</h3>
-                <p>Designing and implementing scalable cloud-native solutions using Kubernetes and modern infrastructure patterns.</p>
-            </div>
-            <div class="expertise-card" style="width: 100%;">
-                <div class="expertise-icon">
-                    <i class="fas fa-network-wired"></i>
-                </div>
-                <h3>Enterprise Integration</h3>
-                <p>Building robust integration systems that power complex banking operations and connect diverse platforms.</p>
-            </div>
-            <div class="expertise-card" style="width: 100%;">
-                <div class="expertise-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3>Security & Compliance</h3>
-                <p>Implementing secure systems that adhere to global banking regulations and best practices.</p>
-            </div>
-            <div class="expertise-card" style="width: 100%;">
-                <div class="expertise-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Reporting & Data Analytics</h3>
-                <p>Creating comprehensive reporting solutions and data-driven insights for informed decision making.</p>
-            </div>
-        </div>
+      <p>© <span id="year"></span> Devanand K · Navi Mumbai, India</p>
+      <p class="mono">Crafted with vanilla HTML/CSS/JS · No frameworks were harmed ·
+        <button data-open-terminal style="color: var(--accent); font-family: inherit; font-size: inherit;">open terminal</button>
+      </p>
     </div>
-</section>
+  </footer>
 
-<section class="highlights-section">
-    <div class="container">
-        <div class="highlights-grid">
-            <div class="highlight-card">
-                <span class="highlight-number">20+</span>
-                <span class="highlight-label">Countries & Regulations</span>
-            </div>
-            <div class="highlight-card">
-                <span class="highlight-number">120+</span>
-                <span class="highlight-label">Banking Servers</span>
-            </div>
-            <div class="highlight-card">
-                <span class="highlight-number">12+</span>
-                <span class="highlight-label">Years in Enterprise Tech</span>
-            </div>
-            <div class="highlight-card">
-                <span class="highlight-number">20+</span>
-                <span class="highlight-label">K8s Clusters</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="featured-work">
-    <div class="container">
-        <h2 class="section-title">Featured Work</h2>
-        <div class="featured-grid">
-            <div class="featured-card">
-                <div class="featured-content">
-                    <h3>Loan Lifecycle Management System (LLMS)</h3>
-                    <p>Led development of a cloud-native solution for SBI's international operations, implementing secure document management and automated workflows.</p>
-                    <div class="tech-tags">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Podman</span>
-                        <span>Security</span>
-                    </div>
-                </div>
-            </div>
-            <div class="featured-card">
-                <div class="featured-content">
-                    <h3>Report Generation Engine</h3>
-                    <p>Designed and implemented a comprehensive reporting system supporting multiple formats with AES-256 encryption for sensitive data.</p>
-                    <div class="tech-tags">
-                        <span>Jasper Reports</span>
-                        <span>Oracle 19c</span>
-                        <span>Spring Boot</span>
-                        <span>Security</span>
-                    </div>
-                </div>
-            </div>
-            <div class="featured-card">
-                <div class="featured-content">
-                    <h3>Report Distribution System (ReDiS)</h3>
-                    <p>Built a Java-based agent deployed across 120+ core banking servers for centralized report distribution and data aggregation.</p>
-                    <div class="tech-tags">
-                        <span>Java</span>
-                        <span>Distributed Systems</span>
-                        <span>Oracle 19c</span>
-                        <span>High Availability</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-cta">
-            <a href="/projects" class="btn btn-secondary">View All Projects</a>
-        </div>
-    </div>
-</section> 
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/game.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

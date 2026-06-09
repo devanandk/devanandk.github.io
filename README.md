@@ -1,138 +1,51 @@
-# Devanand K - Personal Portfolio Website
+# 🎮 devanandk.github.io — Career Quest
 
-A modern, responsive personal website and portfolio showcasing my projects, skills, and professional experience. Built with Jekyll and hosted with GitHub Pages.
+An interactive, gamified portfolio for **Devanand K** — Banking Technologist, Enterprise
+Integration Specialist, Cloud-native Architect, and AI Explorer.
 
-## 🌟 Features
+**Live site:** https://devanandk.github.io
 
-- Modern, responsive design
-- Light/Dark theme toggle
-- Mobile-first approach
-- SEO optimized
-- Fast loading and performance
-- Clean and professional UI
-- Project showcase
-- Professional experience timeline
-- Contact information
-- Social media integration
+## The concept
 
-## 🛠️ Tech Stack
+Instead of a static résumé page, the portfolio plays like a lightweight RPG:
 
-- Jekyll 4.3.2
-- HTML5 & CSS3
-- JavaScript (ES6+)
-- Font Awesome Icons
-- Google Fonts
+- 🧬 **Character Sheet** — a hero card with class, level (13 = years of experience), guild and current quest
+- 🌳 **Skill Tree** — six expandable branches with skill levels
+- 🗺️ **Quest Log** — career history as quests (current role = active quest)
+- ⭐ **Side Quests** — projects as mission cards with rarity tiers (Legendary → Common)
+- 🏆 **Achievements & XP** — visitors earn XP and unlock achievements as they explore; progress persists in `localStorage`
+- 💻 **Easter eggs** — a hidden interactive terminal (press <kbd>`</kbd>), the Konami code, and more
 
-## 🚀 Getting Started
+Everything remains fully readable as a normal portfolio — the game layer is optional flavor,
+not a gate.
 
-### Prerequisites
+## Tech
 
-- Ruby 2.7.0 or higher
-- RubyGems
-- Bundler
-- Git
+- Pure **HTML / CSS / vanilla JavaScript** — no frameworks, no build step
+- Served directly by **GitHub Pages** (`.nojekyll` disables the Jekyll pipeline)
+- Responsive, dark/light themes, `prefers-reduced-motion` respected, semantic markup + JSON-LD
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/devanandk/devanandk.github.io.git
-   cd devanandk.github.io
-   ```
-
-2. Install dependencies:
-   ```bash
-   bundle install
-   ```
-
-3. Start the local server:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-4. Visit `http://localhost:4000` in your browser
-
-## 📁 Project Structure
+## Structure
 
 ```
-devanandk.github.io/
-├── _layouts/          # Jekyll layouts
-├── assets/           # Static assets
-│   ├── css/         # Stylesheets
-│   ├── js/          # JavaScript files
-│   └── images/      # Image files
-├── _config.yml      # Jekyll configuration
-├── Gemfile          # Ruby dependencies
-├── index.html       # Home page
-├── about.md         # About page
-├── experience.md    # Experience page
-├── projects.md      # Projects page
-└── contact.md       # Contact page
+index.html              # single-page app
+404.html                # themed "undiscovered area" page
+assets/css/style.css    # all styles (design tokens at the top)
+assets/js/data.js       # ✏️ ALL content lives here — edit this to update the site
+assets/js/game.js       # game engine: XP, levels, achievements, toasts, persistence
+assets/js/main.js       # rendering + interactions (skill tree, quest log, terminal…)
 ```
 
-## 🎨 Customization
+## Updating content
 
-### Theme Colors
-The site uses CSS variables for easy color customization. Edit the following variables in `assets/css/main.css`:
+Edit `assets/js/data.js` — profile, skills, experience (quests), projects and achievements
+are all plain data objects. No other file needs to change for content updates.
 
-```css
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --text-color: #333;
-    --bg-color: #ffffff;
-    /* ... other variables ... */
-}
+## Run locally
+
+Any static server works:
+
+```bash
+python3 -m http.server 8000
+# → http://localhost:8000
 ```
-
-### Content Updates
-- Edit markdown files (`.md`) for content changes
-- Update `_config.yml` for site-wide settings
-- Modify `_layouts/default.html` for layout changes
-
-## 🔒 Security
-
-- Sensitive information is excluded via `.gitignore`
-- No API keys or credentials in the repository
-- HTTPS enforced on GitHub Pages
-
-## 📱 Responsive Design
-
-The site is fully responsive and tested on:
-- Desktop (1920px and below)
-- Tablet (768px and below)
-- Mobile (480px and below)
-
-## 🌐 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Opera (latest)
-
-## 🧪 Testing
-
-1. Local testing:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-2. Check for broken links:
-   ```bash
-   bundle exec htmlproofer ./_site
-   ```
-
-## 📦 Deployment
-
-The site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
-
-## 🙏 Acknowledgments
-
-- Jekyll team for the amazing static site generator
-- Font Awesome for the icons
-- All contributors and supporters
-
----
-
-Made with ❤️ by Devanand K
