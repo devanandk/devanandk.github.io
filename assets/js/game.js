@@ -181,19 +181,46 @@ DK.game = (() => {
     }
   }
 
-  /* ---------- konami code ---------- */
+  /* ---------- konami code (keyboard + touch) ---------- */
   function initKonami() {
     const seq = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
     let pos = 0;
-    document.addEventListener("keydown", (e) => {
-      const key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
-      pos = key === seq[pos] ? pos + 1 : (key === seq[0] ? 1 : 0);
+
+    const feed = (token) => {
+      pos = token === seq[pos] ? pos + 1 : (token === seq[0] ? 1 : 0);
       if (pos === seq.length) {
         pos = 0;
         unlock("konami");
         confetti();
       }
+    };
+
+    document.addEventListener("keydown", (e) => {
+      feed(e.key.length === 1 ? e.key.toLowerCase() : e.key);
     });
+
+    /* Touch variant: swipes are the arrows, two taps at the end are B A.
+       Listeners are passive observers — scrolling is never blocked. */
+    let x0 = 0, y0 = 0, t0 = 0;
+    document.addEventListener("touchstart", (e) => {
+      const t = e.changedTouches[0];
+      x0 = t.clientX; y0 = t.clientY; t0 = Date.now();
+    }, { passive: true });
+
+    document.addEventListener("touchend", (e) => {
+      const t = e.changedTouches[0];
+      const dx = t.clientX - x0, dy = t.clientY - y0;
+      const adx = Math.abs(dx), ady = Math.abs(dy);
+      if (Math.max(adx, ady) < 24) {
+        // a tap — only meaningful when B or A is the next expected input,
+        // so ordinary tapping around the page never resets swipe progress
+        const expected = seq[pos];
+        if (expected === "b" || expected === "a") feed(expected);
+        return;
+      }
+      if (Date.now() - t0 > 800) return; // slow drag, not a deliberate swipe
+      feed(adx > ady ? (dx > 0 ? "ArrowRight" : "ArrowLeft") : (dy > 0 ? "ArrowDown" : "ArrowUp"));
+    }, { passive: true });
   }
 
   /* lightweight confetti, respects reduced motion */

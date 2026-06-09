@@ -454,7 +454,9 @@
       sudo: () => print("Nice try. This shell runs on the principle of least privilege. 🛡️", "muted"),
       coffee: () => print("☕ Brewing… ERROR 418: I'm a teapot.", "muted"),
       fly: () => { G.unlock("pilot"); print("✈️ Spawning at runway 27R… gear up, flaps 1. Enjoy the A320!"); },
-      konami: () => print("↑ ↑ ↓ ↓ ← → ← → B A — but you didn't hear it from me.", "muted"),
+      konami: () => print(
+        "↑ ↑ ↓ ↓ ← → ← → B A — but you didn't hear it from me.<br>" +
+        "On touch: swipe ↑ ↑ ↓ ↓ ← → ← →, then tap twice.", "muted"),
       fight: () => {
         close();
         document.getElementById("boss").scrollIntoView({ behavior: "smooth" });
